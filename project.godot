@@ -16,5 +16,5 @@ config/icon="res://Imatges/icon.svg"
 
 [display]
 
-window/size/viewport_width=600
-window/size/viewport_height=900
+window/size/viewport_width=850
+window/size/viewport_height=1000
