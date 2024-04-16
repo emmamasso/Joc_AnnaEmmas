@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biniu6ip7nx0f"
-path="res://.godot/imported/spaceShips_002.png-f2c59f10d14b9bda2e60a5083446f9d1.ctex"
+path="res://.godot/imported/spaceShips_002.png-b02d3347c793ce906697edfffa464025.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/Enemics/Opció 2/spaceShips_002.png"
-dest_files=["res://.godot/imported/spaceShips_002.png-f2c59f10d14b9bda2e60a5083446f9d1.ctex"]
+source_file="res://Imatges/Enemics/Nobles/spaceShips_002.png"
+dest_files=["res://.godot/imported/spaceShips_002.png-b02d3347c793ce906697edfffa464025.ctex"]
 
 [params]
 
