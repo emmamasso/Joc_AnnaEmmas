@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcvevk2c565f7"]
+
+[ext_resource type="Texture2D" uid="uid://cxk3psfdxrbc5" path="res://Imatges/Backgrounds/blue.png" id="1_6dkwp"]
+
+[node name="Fons" type="Node2D"]
+
+[node name="Fons1" type="Sprite2D" parent="."]
+position = Vector2(706.386, 504)
+scale = Vector2(1.16886, 1.5319)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons2" type="Sprite2D" parent="."]
+position = Vector2(140, 156)
+scale = Vector2(1.09375, 1.21875)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons3" type="Sprite2D" parent="."]
+position = Vector2(707.5, 156)
+scale = Vector2(1.15234, 1.21875)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons4" type="Sprite2D" parent="."]
+position = Vector2(418.77, 156.209)
+scale = Vector2(1.10336, 1.21712)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons5" type="Sprite2D" parent="."]
+position = Vector2(706.386, 847.708)
+scale = Vector2(1.16886, 1.25228)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons6" type="Sprite2D" parent="."]
+position = Vector2(136, 847.708)
+scale = Vector2(1.09576, 1.25228)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons7" type="Sprite2D" parent="."]
+position = Vector2(136, 504)
+scale = Vector2(1.09576, 1.5319)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons8" type="Sprite2D" parent="."]
+position = Vector2(415.282, 847.923)
+scale = Vector2(1.10539, 1.2506)
+texture = ExtResource("1_6dkwp")
+
+[node name="Fons9" type="Sprite2D" parent="."]
+position = Vector2(415.282, 504.263)
+scale = Vector2(1.10539, 1.52985)
+texture = ExtResource("1_6dkwp")
