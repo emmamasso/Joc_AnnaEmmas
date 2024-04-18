@@ -1,11 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dr5227qfqowue"]
+[gd_scene load_steps=3 format=3 uid="uid://dr5227qfqowue"]
 
+[ext_resource type="Script" path="res://Scripts/Enemic_peons.gd" id="1_gqu16"]
 [ext_resource type="Texture2D" uid="uid://dfqgwvrk0na6m" path="res://Imatges/Enemics/Peons/spaceShips_008.png" id="1_tlqnw"]
 
 [node name="Escena Peons" type="Node2D"]
 
 [node name="SpaceShips" type="CharacterBody2D" parent="."]
 position = Vector2(1, -1)
+script = ExtResource("1_gqu16")
 
 [node name="Peons" type="Sprite2D" parent="SpaceShips"]
 texture = ExtResource("1_tlqnw")
