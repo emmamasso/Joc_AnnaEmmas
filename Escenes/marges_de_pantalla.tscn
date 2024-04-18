@@ -1,27 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3liq734qntlf"]
+[gd_scene load_steps=4 format=3 uid="uid://ddotqqy0qpkhi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7uto"]
 size = Vector2(16, 1000)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4v2m"]
-size = Vector2(866, 20)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_80jf2"]
 size = Vector2(28, 1008)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4v2m"]
+size = Vector2(866, 20)
+
 [node name="Marges de pantalla" type="Node2D"]
 
-[node name="Collision esquerra" type="CollisionShape2D" parent="."]
+[node name="Area esquerra" type="Area2D" parent="."]
+
+[node name="Collision esquerra" type="CollisionShape2D" parent="Area esquerra"]
 light_mask = 8
 position = Vector2(-8, 500)
 shape = SubResource("RectangleShape2D_k7uto")
 
-[node name="Collision superior" type="CollisionShape2D" parent="."]
-light_mask = 2
-position = Vector2(423, -10)
-shape = SubResource("RectangleShape2D_v4v2m")
+[node name="Area dreta" type="Area2D" parent="."]
 
-[node name="Collision dreta" type="CollisionShape2D" parent="."]
+[node name="Collision dreta" type="CollisionShape2D" parent="Area dreta"]
 light_mask = 4
 position = Vector2(865, 496)
 shape = SubResource("RectangleShape2D_80jf2")
+
+[node name="Area superior" type="Area2D" parent="."]
+
+[node name="Collision superior" type="CollisionShape2D" parent="Area superior"]
+light_mask = 2
+position = Vector2(423, -10)
+shape = SubResource("RectangleShape2D_v4v2m")
