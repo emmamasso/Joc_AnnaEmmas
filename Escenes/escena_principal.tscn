@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6mywfk1yxxrq"]
+[gd_scene load_steps=4 format=3 uid="uid://c6mywfk1yxxrq"]
 
-[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_q5ydv"]
-[ext_resource type="PackedScene" uid="uid://c3liq734qntlf" path="res://Escenes/marges_de_pantalla.tscn" id="2_m72xu"]
+[ext_resource type="PackedScene" path="res://Escenes/fons.tscn" id="1_q5ydv"]
+[ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="2_m72xu"]
+[ext_resource type="PackedScene" uid="uid://dr5227qfqowue" path="res://Escenes/escena_peons.tscn" id="3_owp1c"]
 
 [node name="Escena Principal" type="Node2D"]
 
 [node name="Fons" parent="." instance=ExtResource("1_q5ydv")]
 
 [node name="Marges de pantalla" parent="." instance=ExtResource("2_m72xu")]
+
+[node name="Escena Peons" parent="." instance=ExtResource("3_owp1c")]
+position = Vector2(121, 95)
