@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://bnsm0b4lpdb21"]
+[gd_scene load_steps=2 format=3 uid="uid://bnsm0b4lpdb21"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4qsnl"]
 
 [node name="escena bales" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4qsnl")
