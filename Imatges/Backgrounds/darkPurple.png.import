@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3au1g1a5e4qr"
-path="res://.godot/imported/enemyBlack2.png-4f073937a2c24a004044dc5947d83112.ctex"
+uid="uid://c3t6snh0m0ysf"
+path="res://.godot/imported/darkPurple.png-3c5f30244667921eb997db0df278c76e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/Enemics/Opció 1/enemyBlack2.png"
-dest_files=["res://.godot/imported/enemyBlack2.png-4f073937a2c24a004044dc5947d83112.ctex"]
+source_file="res://Imatges/Backgrounds/darkPurple.png"
+dest_files=["res://.godot/imported/darkPurple.png-3c5f30244667921eb997db0df278c76e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8nx8cvlawfat"
-path="res://.godot/imported/enemyBlack5.png-fde63a21ad2f7d002d6e4aef28180e8b.ctex"
+uid="uid://dn4q6yiljp0r5"
+path="res://.godot/imported/spaceShips_003.png-816af61f27cf074e23b15fd422edda09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/Enemics/Opció 1/enemyBlack5.png"
-dest_files=["res://.godot/imported/enemyBlack5.png-fde63a21ad2f7d002d6e4aef28180e8b.ctex"]
+source_file="res://Imatges/Enemics/Peons/spaceShips_003.png"
+dest_files=["res://.godot/imported/spaceShips_003.png-816af61f27cf074e23b15fd422edda09.ctex"]
 
 [params]
 
