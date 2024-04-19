@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c2npjp6am2n2f"]
 
-[ext_resource type="Script" path="res://Escenes/Avió.gd" id="1_02o88"]
+[ext_resource type="Script" path="res://Escenes/Scripts/Avió.gd" id="1_02o88"]
 [ext_resource type="Texture2D" uid="uid://dr0evfuyo4j30" path="res://Imatges/Avió.png" id="2_lx8pc"]
 
 [node name="avió" type="Node2D"]
