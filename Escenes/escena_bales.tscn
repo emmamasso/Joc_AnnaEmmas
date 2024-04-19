@@ -1,36 +1,33 @@
-[gd_scene load_steps=7 format=3 uid="uid://bnsm0b4lpdb21"]
+[gd_scene load_steps=6 format=3 uid="uid://bnsm0b4lpdb21"]
 
-[ext_resource type="Texture2D" uid="uid://0218bp28gtn0" path="res://Imatges/Bales/laserGreen08.png" id="1_rcl4j"]
-[ext_resource type="Texture2D" uid="uid://ddgt0atycuhqx" path="res://Imatges/Bales/laserGreen15.png" id="2_m54bo"]
-[ext_resource type="Texture2D" uid="uid://b250ks0skovu1" path="res://Imatges/Bales/laserGreen16.png" id="3_4vdm2"]
-[ext_resource type="Texture2D" uid="uid://csrmtdoee05rs" path="res://Imatges/Bales/laserGreen14.png" id="4_wjt55"]
-[ext_resource type="Texture2D" uid="uid://cgep4p752ka3y" path="res://Imatges/Bales/laserGreen01.png" id="5_l73qp"]
+[ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_8kybh"]
+[ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_kqtyw"]
+[ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_vr1dp"]
+[ext_resource type="Texture2D" uid="uid://dkm8ur5e82p3y" path="res://Imatges/Bales/laserGreen03.png" id="4_47vln"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_4qsnl"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_qb37e"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_rcl4j")
+"texture": ExtResource("1_8kybh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_m54bo")
+"texture": ExtResource("2_kqtyw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_4vdm2")
+"texture": ExtResource("3_vr1dp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_wjt55")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_l73qp")
+"texture": ExtResource("4_47vln")
 }],
-"loop": true,
-"name": &"explota",
-"speed": 5.0
+"loop": false,
+"name": &"default",
+"speed": 8.0
 }]
 
-[node name="escena bales" type="Node2D"]
+[node name="escena_laser" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_4qsnl")
-animation = &"explota"
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qb37e")
+frame = 3
+frame_progress = 1.0
