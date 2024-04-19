@@ -1,4 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddotqqy0qpkhi"]
+[gd_scene load_steps=6 format=3 uid="uid://ddotqqy0qpkhi"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/Area esquerra.gd" id="1_ory02"]
+[ext_resource type="Script" path="res://Escenes/Scripts/Area dreta.gd" id="2_dyvdy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7uto"]
 size = Vector2(16, 1000)
@@ -12,6 +15,7 @@ size = Vector2(866, 20)
 [node name="Marges de pantalla" type="Node2D"]
 
 [node name="Area esquerra" type="Area2D" parent="."]
+script = ExtResource("1_ory02")
 
 [node name="Collision esquerra" type="CollisionShape2D" parent="Area esquerra"]
 light_mask = 8
@@ -19,6 +23,7 @@ position = Vector2(-8, 500)
 shape = SubResource("RectangleShape2D_k7uto")
 
 [node name="Area dreta" type="Area2D" parent="."]
+script = ExtResource("2_dyvdy")
 
 [node name="Collision dreta" type="CollisionShape2D" parent="Area dreta"]
 light_mask = 4
@@ -31,3 +36,8 @@ shape = SubResource("RectangleShape2D_80jf2")
 light_mask = 2
 position = Vector2(423, -10)
 shape = SubResource("RectangleShape2D_v4v2m")
+
+[connection signal="body_entered" from="Area esquerra" to="Area esquerra" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="Area esquerra" to="Area esquerra" method="_on_body_shape_entered"]
+[connection signal="body_entered" from="Area dreta" to="Area esquerra" method="_on_area_dreta_body_entered"]
+[connection signal="body_entered" from="Area dreta" to="Area dreta" method="_on_body_entered"]
