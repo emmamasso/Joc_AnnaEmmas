@@ -7,6 +7,6 @@ func _process(delta):
 	move_and_slide()
 	
 func canvia_direcció_dreta():
-		direccio = Vector2 (1,0)
+	direccio = Vector2 (1,0)
 func canvia_direcció_esquerra():
 	direccio = Vector2 (-1,0)
