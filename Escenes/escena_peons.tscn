@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dr5227qfqowue"]
 
-[ext_resource type="Script" path="res://Scripts/Enemic_peons.gd" id="1_gqu16"]
+[ext_resource type="Script" path="res://Escenes/Scripts/Enemic_peons.gd" id="1_gqu16"]
 [ext_resource type="Texture2D" uid="uid://dfqgwvrk0na6m" path="res://Imatges/Enemics/Peons/spaceShips_008.png" id="1_tlqnw"]
 
 [node name="Escena Peons" type="Node2D"]
