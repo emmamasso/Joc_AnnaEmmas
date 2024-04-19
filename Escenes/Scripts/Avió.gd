@@ -17,5 +17,12 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+	if Input.is_action_pressed("dispara"):
+		dispara()
 
 	move_and_slide()
+	
+func dispara():
+	var escena_laser:PackedScene= load("res://Escenes/escena_bales.tscn")
+	#nou_laser = escena_laser.instantiate 
+	

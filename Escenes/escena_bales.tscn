@@ -25,9 +25,14 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="escena_laser" type="Node2D"]
+[node name="escena_laser" type="Area2D"]
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, 2)
+scale = Vector2(1.16667, 0.570175)
 sprite_frames = SubResource("SpriteFrames_qb37e")
 frame = 3
 frame_progress = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6, 18, 5, 17, 4, -16, -7, -15)
