@@ -7,9 +7,9 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 func _on_body_entered(body):
-	body.canvia_direccio_esquerra()
+	body.canvia_direcció_esquerra()
