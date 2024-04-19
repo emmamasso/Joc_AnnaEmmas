@@ -13,4 +13,4 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	body.canvia_direccio_dreta()
+	body.canvia_direcció_dreta()
