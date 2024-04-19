@@ -6,7 +6,7 @@ func _process(delta):
 	velocity = direccio.normalized()*velocitat_màxima
 	move_and_slide()
 	
-func _canvia_direcció_dreta():
-		direccio = Vector2 (1,0)
-func _canvia_direcció_esquerra():
+func canvia_direcció_dreta():
+	direccio = Vector2 (1,0)
+func canvia_direcció_esquerra():
 	direccio = Vector2 (-1,0)
