@@ -27,5 +27,6 @@ func dispara():
 	var escena_laser:PackedScene= load("res://Escenes/escena_laser.tscn")
 	nou_laser= escena_laser.instantiate()
 	nou_laser.global_position = global_position
+	%Lasers.add_child(nou_laser)
 	 
 	

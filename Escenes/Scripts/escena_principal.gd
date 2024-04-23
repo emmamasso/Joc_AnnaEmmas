@@ -1,7 +1,7 @@
 extends Node2D
 var EscenaPeons: PackedScene = load("res://Escenes/escena_peons.tscn")
 var nou_peo
-var posicio_inicial_peo = Vector2(116, 89)
+var posicio_inicial_peo = Vector2(116, 37)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Temps.start()

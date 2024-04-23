@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxx4kuyuat8po"]
+[gd_scene load_steps=7 format=3 uid="uid://dxx4kuyuat8po"]
 
+[ext_resource type="Script" path="res://Escenes/escena_laser.gd" id="1_4bjj3"]
 [ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_fm6cl"]
 [ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_tevip"]
 [ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_rwmsd"]
@@ -21,18 +22,22 @@ animations = [{
 "texture": ExtResource("4_1wihw")
 }],
 "loop": false,
-"name": &"default",
+"name": &"laser_surt",
 "speed": 8.0
 }]
 
 [node name="escena_laser" type="Area2D"]
+position = Vector2(194, 115)
+script = ExtResource("1_4bjj3")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 2)
-scale = Vector2(1.16667, 0.570175)
+position = Vector2(-194, -116)
+scale = Vector2(0.506412, 0.737138)
 sprite_frames = SubResource("SpriteFrames_qb37e")
-frame = 3
-frame_progress = 1.0
+animation = &"laser_surt"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-6, 18, 5, 17, 4, -16, -7, -15)
+position = Vector2(-193, -117)
+polygon = PackedVector2Array(-4, 14, 3, 13, 3, -15, -4, -15)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
