@@ -11,7 +11,7 @@
 [node name="Metoerit 1 part 1" parent="." instance=ExtResource("1_d7e1y")]
 
 [node name="Meteorit1Part2" parent="." instance=ExtResource("2_arooq")]
-position = Vector2(19, 0)
+position = Vector2(20, 0)
 
 [node name="Meteorit 1 part 3" parent="." instance=ExtResource("3_ygwlb")]
 position = Vector2(40, 0)
