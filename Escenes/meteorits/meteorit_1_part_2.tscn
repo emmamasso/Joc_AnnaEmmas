@@ -7,6 +7,7 @@
 size = Vector2(20, 18)
 
 [node name="Meteorit1Part2" type="Node2D"]
+visibility_layer = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 visibility_layer = 2

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c84bisdbisy3v" path="res://Imatges/Meteorits/meteorBrown_big1.png" id="1_d4wrx"]
 
 [node name="Metoerit 1 part 1" type="Node2D"]
+visibility_layer = 2
 
 [node name="Area2D" type="Area2D" parent="."]
 visibility_layer = 2
