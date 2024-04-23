@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dr0evfuyo4j30" path="res://Imatges/Avió.png" id="2_lx8pc"]
 
 [node name="avió" type="Node2D"]
+position = Vector2(433, 265)
 
 [node name="Avió" type="CharacterBody2D" parent="."]
 position = Vector2(-1, 1)
