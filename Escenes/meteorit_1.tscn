@@ -1,7 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://btktudwx0kmcr"]
+[gd_scene load_steps=3 format=3 uid="uid://btktudwx0kmcr"]
 
 [ext_resource type="PackedScene" uid="uid://daxvjo5rs6d0d" path="res://Escenes/metoerit_1_part_1.tscn" id="1_d7e1y"]
+[ext_resource type="PackedScene" uid="uid://dkub8420jan5b" path="res://Escenes/meteorit_1_part_2.tscn" id="2_arooq"]
 
 [node name="Meteorit1" type="Node2D"]
+position = Vector2(19, 23)
 
 [node name="Metoerit 1 part 1" parent="." instance=ExtResource("1_d7e1y")]
+
+[node name="Meteorit1Part2" parent="." instance=ExtResource("2_arooq")]
+position = Vector2(20, 0)
