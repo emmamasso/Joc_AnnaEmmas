@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://btktudwx0kmcr"]
+
+[ext_resource type="PackedScene" uid="uid://daxvjo5rs6d0d" path="res://Escenes/metoerit_1_part_1.tscn" id="1_d7e1y"]
+
+[node name="Meteorit1" type="Node2D"]
+
+[node name="Metoerit 1 part 1" parent="." instance=ExtResource("1_d7e1y")]
