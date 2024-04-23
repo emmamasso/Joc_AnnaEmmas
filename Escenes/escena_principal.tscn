@@ -13,13 +13,13 @@ script = ExtResource("1_4p658")
 [node name="Marges de pantalla" parent="." instance=ExtResource("3_m5fb0")]
 
 [node name="Temps" type="Timer" parent="."]
-wait_time = 1.75
+wait_time = 1.25
 
 [node name="Peons" type="Node2D" parent="."]
 unique_name_in_owner = true
 
 [node name="Escena Peons" parent="Peons" instance=ExtResource("1_1t4f8")]
-position = Vector2(116, 89)
+position = Vector2(116, 37)
 
 [node name="Lasers" type="Node2D" parent="."]
 unique_name_in_owner = true
