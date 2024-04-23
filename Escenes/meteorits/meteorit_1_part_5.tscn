@@ -3,22 +3,18 @@
 [ext_resource type="Script" path="res://Escenes/Scripts/meteorit.gd" id="1_4cuo7"]
 [ext_resource type="Texture2D" uid="uid://c84bisdbisy3v" path="res://Imatges/Meteorits/meteorBrown_big1.png" id="2_k13p0"]
 
-[node name="meteorit1part5" type="Node2D"]
-visibility_layer = 2
-
-[node name="Area2D" type="Area2D" parent="."]
-visibility_layer = 2
+[node name="meteorit1part5" type="Area2D"]
+collision_layer = 16
+collision_mask = 12
 script = ExtResource("1_4cuo7")
 
-[node name="MeteorBrownBig1" type="Sprite2D" parent="Area2D"]
-visibility_layer = 2
+[node name="MeteorBrownBig1" type="Sprite2D" parent="."]
 texture = ExtResource("2_k13p0")
 region_enabled = true
 region_rect = Rect2(80, 0, 20, 20)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-visibility_layer = 2
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(-1.8, 2)
 polygon = PackedVector2Array(-8, 8, 0, 8, -8.2, -3)
 
-[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

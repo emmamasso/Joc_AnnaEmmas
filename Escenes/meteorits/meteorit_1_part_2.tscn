@@ -7,17 +7,16 @@
 size = Vector2(20, 18)
 
 [node name="Meteorit 1 Part 2" type="Area2D"]
-visibility_layer = 2
+collision_layer = 16
+collision_mask = 12
 script = ExtResource("1_ltk5s")
 
 [node name="MeteorBrownBig1" type="Sprite2D" parent="."]
-visibility_layer = 2
 texture = ExtResource("2_uthmj")
 region_enabled = true
 region_rect = Rect2(20, 0, 20, 20)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visibility_layer = 2
 scale = Vector2(1, 1.1)
 shape = SubResource("RectangleShape2D_0eyu2")
 
