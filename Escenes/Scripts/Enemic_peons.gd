@@ -7,11 +7,11 @@ func _process(delta):
 	move_and_slide()
 	
 func canvia_direcció_dreta():
-	direccio = Vector2(0,1)
+	direccio = Vector2(0,0.825)
 	banda = "dreta"
 	$Timer.start()
 func canvia_direcció_esquerra():
-	direccio = Vector2(0,1)
+	direccio = Vector2(0,0.825)
 	banda = "esquerra"
 	$Timer.start()
 
