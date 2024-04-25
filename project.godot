@@ -15,6 +15,10 @@ run/main_scene="res://Escenes/avió.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://Imatges/icon.svg"
 
+[autoload]
+
+Vides="*res://Escenes/Scripts/Vides.gd"
+
 [display]
 
 window/size/viewport_width=850
