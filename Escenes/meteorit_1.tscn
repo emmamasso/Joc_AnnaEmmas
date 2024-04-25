@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://btktudwx0kmcr"]
+[gd_scene load_steps=16 format=3 uid="uid://btktudwx0kmcr"]
 
 [ext_resource type="PackedScene" uid="uid://daxvjo5rs6d0d" path="res://Escenes/meteorits/metoerit_1_part_1.tscn" id="1_d7e1y"]
 [ext_resource type="PackedScene" uid="uid://dkub8420jan5b" path="res://Escenes/meteorits/meteorit_1_part_2.tscn" id="2_arooq"]
@@ -6,6 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://b6fr6tci8cdmx" path="res://Escenes/meteorits/meteorit_1_part_4.tscn" id="4_ypkym"]
 [ext_resource type="PackedScene" uid="uid://c0y7jkmo5yieo" path="res://Escenes/meteorits/meteorit_1_part_5.tscn" id="5_7fs5u"]
 [ext_resource type="PackedScene" uid="uid://chmrjsypbon01" path="res://Escenes/meteorits/meteorit_1_part_6.tscn" id="6_hve8v"]
+[ext_resource type="PackedScene" uid="uid://tbqdgvfhsot1" path="res://Escenes/meteorits/meteorit_1_part_7.tscn" id="7_edjbx"]
+[ext_resource type="PackedScene" uid="uid://dwnknpku74p11" path="res://Escenes/meteorits/meteorit_1_part_8.tscn" id="8_6qg16"]
+[ext_resource type="PackedScene" uid="uid://7us1tpah64kf" path="res://Escenes/meteorits/meteorit_1_part_9.tscn" id="9_k01t4"]
+[ext_resource type="PackedScene" uid="uid://col45lu7am7cl" path="res://Escenes/meteorits/meteorit_1_part_10.tscn" id="10_33ex0"]
+[ext_resource type="PackedScene" uid="uid://bm58kwevuyjpf" path="res://Escenes/meteorits/meteorit_1_part_11.tscn" id="11_qbevb"]
+[ext_resource type="PackedScene" uid="uid://doy1xaru1kpks" path="res://Escenes/meteorits/meteorit_1_part_12.tscn" id="12_230ik"]
+[ext_resource type="PackedScene" uid="uid://bw1a6jny1frqw" path="res://Escenes/meteorits/meteorit_1_part_13.tscn" id="13_8mse4"]
+[ext_resource type="PackedScene" uid="uid://dxplfqvislup6" path="res://Escenes/meteorits/meteorit_1_part_14.tscn" id="14_wbc4q"]
+[ext_resource type="PackedScene" uid="uid://ck86po7qvdgq1" path="res://Escenes/meteorits/meteorit_1_part_15.tscn" id="15_bn1t5"]
 
 [node name="Meteorit1" type="Node2D"]
 
@@ -25,3 +34,30 @@ position = Vector2(80, 0)
 
 [node name="meteorit 1 part 6" parent="." instance=ExtResource("6_hve8v")]
 position = Vector2(0, 20)
+
+[node name="meteorit1part7" parent="." instance=ExtResource("7_edjbx")]
+position = Vector2(20, 20)
+
+[node name="meteorit1part8" parent="." instance=ExtResource("8_6qg16")]
+position = Vector2(40, 20)
+
+[node name="meteorit1part9" parent="." instance=ExtResource("9_k01t4")]
+position = Vector2(60, 20)
+
+[node name="meteorit1part10" parent="." instance=ExtResource("10_33ex0")]
+position = Vector2(80, 20)
+
+[node name="meteorit1part11" parent="." instance=ExtResource("11_qbevb")]
+position = Vector2(0, 40)
+
+[node name="meteorit1part12" parent="." instance=ExtResource("12_230ik")]
+position = Vector2(20, 40)
+
+[node name="meteorit1part13" parent="." instance=ExtResource("13_8mse4")]
+position = Vector2(40, 40)
+
+[node name="meteorit1part14" parent="." instance=ExtResource("14_wbc4q")]
+position = Vector2(60, 40)
+
+[node name="meteorit1part15" parent="." instance=ExtResource("15_bn1t5")]
+position = Vector2(80, 40)
