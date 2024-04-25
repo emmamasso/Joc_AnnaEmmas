@@ -20,3 +20,6 @@ func _on_timer_timeout():
 		direccio = Vector2(1,0)
 	else:
 		direccio = Vector2(-1,0)
+		
+func explota():
+	queue_free()
