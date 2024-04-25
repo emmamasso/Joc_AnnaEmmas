@@ -1,5 +1,5 @@
-extends Node2D
-var Vida = 3
+extends Sprite2D
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,4 +8,5 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if Vides.Vida ==1 or Vides.Vida ==2 or Vides.Vida == 0:
+		self.visibility = false
