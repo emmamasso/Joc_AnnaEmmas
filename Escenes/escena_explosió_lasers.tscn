@@ -35,3 +35,5 @@ animations = [{
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_iq0se")
 animation = &"explota"
+frame = 4
+frame_progress = 1.0

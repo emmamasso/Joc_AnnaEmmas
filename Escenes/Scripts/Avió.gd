@@ -19,8 +19,10 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	if Input.is_action_pressed("dispara"):
 		dispara()
-		
-	move_and_slide()
+	if position.x >= 2 and position.x <= 849:
+		move_and_slide()
+	else:
+		velocity.x = 0
 
 var nou_laser
 func dispara():

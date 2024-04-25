@@ -27,17 +27,15 @@ animations = [{
 }]
 
 [node name="escena_laser" type="Area2D"]
-position = Vector2(194, 115)
+collision_mask = 26
 script = ExtResource("1_4bjj3")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(-194, -116)
 scale = Vector2(0.506412, 0.737138)
 sprite_frames = SubResource("SpriteFrames_qb37e")
 animation = &"laser_surt"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-193, -117)
 polygon = PackedVector2Array(-4, 14, 3, 13, 3, -15, -4, -15)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

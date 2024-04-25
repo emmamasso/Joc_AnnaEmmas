@@ -23,6 +23,7 @@ position = Vector2(-8, 500)
 shape = SubResource("RectangleShape2D_k7uto")
 
 [node name="Area dreta" type="Area2D" parent="."]
+collision_mask = 18
 script = ExtResource("2_dyvdy")
 
 [node name="Collision dreta" type="CollisionShape2D" parent="Area dreta"]
