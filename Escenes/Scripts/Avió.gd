@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
-
+var direccio := Vector2 (0,0)
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 
 
@@ -13,16 +12,23 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("dreta", "esquerra")
-	if direction:
-		velocity.x = direction * SPEED 
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+	#if direction:
+	#	velocity.x = direction * SPEED 
+	#else:
+	#velocity.x = move_toward(velocity.x, 0, SPEED)
+	direccio = Vector2.ZERO
+	if Input.is_action_pressed("dreta") and position.x <=849:
+		direccio += Vector2(1,0)
+	if Input.is_action_pressed("esquerra") and position.x >= 2:
+		direccio += Vector2(-1,0)
+		
 	if Input.is_action_just_pressed("dispara"):
 		dispara()
-	if position.x >= 2 and position.x <= 849:
-		move_and_slide()
-	else:
-		velocity.x = 0
+	#if position.x >= 2 and position.x <= 849:
+	velocity = direccio * SPEED
+	move_and_slide()
+	#else:
+	#	velocity.x = 0
 
 var nou_laser
 func dispara():
