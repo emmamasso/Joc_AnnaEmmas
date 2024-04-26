@@ -17,7 +17,7 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED 
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-	if Input.is_action_pressed("dispara"):
+	if Input.is_action_just_pressed("dispara"):
 		dispara()
 	if position.x >= 2 and position.x <= 849:
 		move_and_slide()

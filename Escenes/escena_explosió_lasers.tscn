@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://3am2qamtiii1"]
+[gd_scene load_steps=8 format=3 uid="uid://3am2qamtiii1"]
 
 [ext_resource type="Texture2D" uid="uid://0218bp28gtn0" path="res://Imatges/Bales/laserGreen08.png" id="1_skpjp"]
 [ext_resource type="Texture2D" uid="uid://ddgt0atycuhqx" path="res://Imatges/Bales/laserGreen15.png" id="2_6wugs"]
 [ext_resource type="Texture2D" uid="uid://b250ks0skovu1" path="res://Imatges/Bales/laserGreen16.png" id="3_qkp40"]
 [ext_resource type="Texture2D" uid="uid://cgep4p752ka3y" path="res://Imatges/Bales/laserGreen01.png" id="4_t70oq"]
 [ext_resource type="Texture2D" uid="uid://csrmtdoee05rs" path="res://Imatges/Bales/laserGreen14.png" id="5_r510g"]
+[ext_resource type="Script" path="res://Escenes/exploció.laser.gd" id="6_3e138"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iq0se"]
 animations = [{
@@ -25,7 +26,7 @@ animations = [{
 "texture": ExtResource("5_r510g")
 }],
 "loop": false,
-"name": &"explota",
+"name": &"explosio",
 "speed": 12.0
 }]
 
@@ -34,6 +35,5 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_iq0se")
-animation = &"explota"
-frame = 4
-frame_progress = 1.0
+animation = &"explosio"
+script = ExtResource("6_3e138")
