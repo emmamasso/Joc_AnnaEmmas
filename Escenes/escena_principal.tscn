@@ -29,7 +29,7 @@ position = Vector2(116, 37)
 unique_name_in_owner = true
 
 [node name="escena_laser" parent="Lasers" instance=ExtResource("5_tnfa8")]
-position = Vector2(220, 435)
+position = Vector2(-119, 469)
 
 [node name="Avió" parent="." instance=ExtResource("6_1umba")]
 position = Vector2(419, 875)

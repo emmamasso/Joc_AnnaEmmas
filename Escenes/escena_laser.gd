@@ -1,7 +1,7 @@
 extends Area2D
 
 @export var escena_explosió_lasers: PackedScene
-var velocitat = 300
+var velocitat = 800
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
