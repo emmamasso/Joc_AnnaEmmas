@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://c84bisdbisy3v" path="res://Imatges/Meteorits/meteorBrown_big1.png" id="2_m51i6"]
 
 [node name="meteorit1part21" type="Area2D"]
+collision_layer = 16
+collision_mask = 12
 script = ExtResource("1_5p60t")
 
 [node name="MeteorBrownBig1" type="Sprite2D" parent="."]
