@@ -9,4 +9,4 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Vides.Vida ==1 or Vides.Vida ==0:
-		self.visibility = false
+		$PointLight2D. modulate(48,48, 48)

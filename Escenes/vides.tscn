@@ -7,8 +7,8 @@
 [ext_resource type="Script" path="res://Escenes/Scripts/BoltGold3.gd" id="5_uw4j3"]
 
 [sub_resource type="Gradient" id="Gradient_hxsgb"]
-offsets = PackedFloat32Array(0.0974026, 0.655844)
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0.0974026, 1)
+colors = PackedColorArray(1, 0.631373, 0.243137, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_0t8tw"]
 gradient = SubResource("Gradient_hxsgb")
@@ -27,19 +27,40 @@ texture = ExtResource("2_fjbvk")
 script = ExtResource("3_s7hx8")
 
 [node name="PointLight2D" type="PointLight2D" parent="BoltGold"]
-modulate = Color(0.992157, 0.686275, 0, 1)
-position = Vector2(2.25, 1)
+modulate = Color(0.188235, 0.188235, 0.188235, 1)
+position = Vector2(1, -1)
 scale = Vector2(-11.5088, 16.3462)
 color = Color(1, 0.835294, 0.211765, 1)
+energy = 1.15
 texture = SubResource("GradientTexture2D_0t8tw")
 texture_scale = 0.52
 
 [node name="BoltGold2" type="Sprite2D" parent="."]
-position = Vector2(-25, 3)
+position = Vector2(-27, 3)
 texture = ExtResource("2_fjbvk")
 script = ExtResource("4_bfsu4")
+
+[node name="PointLight2D" type="PointLight2D" parent="BoltGold2"]
+modulate = Color(0.992157, 0.686275, 0, 1)
+position = Vector2(53, -4)
+rotation = 3.14159
+scale = Vector2(11.5088, -16.3462)
+color = Color(1, 0.835294, 0.211765, 1)
+energy = 1.15
+texture = SubResource("GradientTexture2D_0t8tw")
+texture_scale = 0.52
 
 [node name="BoltGold3" type="Sprite2D" parent="."]
 position = Vector2(28, 2)
 texture = ExtResource("2_fjbvk")
 script = ExtResource("5_uw4j3")
+
+[node name="PointLight2D" type="PointLight2D" parent="BoltGold3"]
+modulate = Color(0.992157, 0.686275, 0, 1)
+position = Vector2(-54, -2)
+rotation = 3.14159
+scale = Vector2(11.5088, -16.3462)
+color = Color(1, 0.835294, 0.211765, 1)
+energy = 1.15
+texture = SubResource("GradientTexture2D_0t8tw")
+texture_scale = 0.52
