@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciao3fa82kaae"]
+
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_jwo4g"]
+[ext_resource type="FontFile" uid="uid://d4gehdo2q0n13" path="res://Lletra/space age.ttf" id="2_38k6a"]
+[ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="3_ch0nx"]
+
+[node name="PantallaInici" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fons" parent="." instance=ExtResource("1_jwo4g")]
+
+[node name="SPACE INVADERS" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -368.0
+offset_top = 124.0
+offset_right = 368.0
+offset_bottom = 212.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_38k6a")
+theme_override_font_sizes/font_size = 65
+text = "SPACE INVADERS"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -327.0
+offset_top = 210.0
+offset_right = 327.0
+offset_bottom = 246.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_ch0nx")
+theme_override_font_sizes/font_size = 15
+text = "Anna Ortega Alsius, Emma Massó Sala, Emma Tarancón Estrada"
