@@ -1,5 +1,5 @@
 extends Button
-var INSTRUCCIONS:PackedScene = load("res://Escenes/instruccions.tscn")
+var pantalla_inici:PackedScene = load("res://Escenes/pantalla_inici.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,8 +12,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	get_tree().change_scene_to_packed(INSTRUCCIONS)
-
-
-func _on_button_2_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_packed(pantalla_inici)
