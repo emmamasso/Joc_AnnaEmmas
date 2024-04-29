@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dxx4kuyuat8po"]
 
-[ext_resource type="Script" path="res://Escenes/escena_laser.gd" id="1_4bjj3"]
+[ext_resource type="Script" path="res://Escenes/Scripts/escena_laser.gd" id="1_4bjj3"]
 [ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_fm6cl"]
 [ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_tevip"]
 [ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_rwmsd"]

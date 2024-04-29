@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b250ks0skovu1" path="res://Imatges/Bales/laserGreen16.png" id="3_qkp40"]
 [ext_resource type="Texture2D" uid="uid://cgep4p752ka3y" path="res://Imatges/Bales/laserGreen01.png" id="4_t70oq"]
 [ext_resource type="Texture2D" uid="uid://csrmtdoee05rs" path="res://Imatges/Bales/laserGreen14.png" id="5_r510g"]
-[ext_resource type="Script" path="res://Escenes/exploció.laser.gd" id="6_3e138"]
+[ext_resource type="Script" path="res://Escenes/Scripts/exploció.laser.gd" id="6_3e138"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iq0se"]
 animations = [{
