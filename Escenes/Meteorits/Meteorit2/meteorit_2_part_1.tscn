@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dila5ymfgaem6"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/Meteorit.gd" id="1_dtp3u"]
+[ext_resource type="Texture2D" uid="uid://wgwnfn4qydcp" path="res://Imatges/Meteorits/meteorBrown_big2.png" id="2_ya1nv"]
+
+[node name="Meteorit2part1" type="Area2D"]
+collision_layer = 16
+collision_mask = 12
+script = ExtResource("1_dtp3u")
+
+[node name="MeteorBrownBig2" type="Sprite2D" parent="."]
+texture = ExtResource("2_ya1nv")
+region_enabled = true
+region_rect = Rect2(2.08165e-12, 2.08165e-12, 20, 20)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(4, 10, 10, 0, 10, 10)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

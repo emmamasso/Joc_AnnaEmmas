@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_q3sv3"]
 [ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_1g4ri"]
 [ext_resource type="FontFile" uid="uid://d4gehdo2q0n13" path="res://Lletra/space age.ttf" id="3_8dlkp"]
-[ext_resource type="Script" path="res://Escenes/ButtonHasPerdut.gd" id="3_a88pv"]
+[ext_resource type="Script" path="res://Escenes/Scripts/ButtonHasPerdut.gd" id="3_a88pv"]
 
 [node name="HasPerdut" type="Control"]
 layout_mode = 3
