@@ -4,15 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://0spkou0lqjk8" path="res://Imatges/Enemics/spaceMissiles_013.png" id="2_p7a15"]
 
 [node name="Bales peons" type="Area2D"]
+rotation = -3.14079
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_d61qc")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(54, 54)
-scale = Vector2(0.9, 0.9)
+scale = Vector2(0.5, 0.5)
 polygon = PackedVector2Array(5, -20, 12, -15, 12, -10, 16, 17.9, 16, 20, -16, 20, -16, 4.2, -13, 1.2, -13, -10.2, -11.6, -16, -9.7, -16, -5, -19.9, -5, -22, 5, -22)
 
 [node name="SpaceMissiles013" type="Sprite2D" parent="."]
-position = Vector2(54, 54)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_p7a15")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
