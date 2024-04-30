@@ -1,8 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6u23yuby3hgb"]
+[gd_scene load_steps=3 format=3 uid="uid://c6u23yuby3hgb"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_vt7tq"]
+[ext_resource type="Script" path="res://Escenes/Scripts/bales_peons.gd" id="1_d61qc"]
+[ext_resource type="Texture2D" uid="uid://0spkou0lqjk8" path="res://Imatges/Enemics/spaceMissiles_013.png" id="2_p7a15"]
 
 [node name="Bales peons" type="Area2D"]
+script = ExtResource("1_d61qc")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_vt7tq")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(54, 54)
+scale = Vector2(0.9, 0.9)
+polygon = PackedVector2Array(5, -20, 12, -15, 12, -10, 16, 17.9, 16, 20, -16, 20, -16, 4.2, -13, 1.2, -13, -10.2, -11.6, -16, -9.7, -16, -5, -19.9, -5, -22, 5, -22)
+
+[node name="SpaceMissiles013" type="Sprite2D" parent="."]
+position = Vector2(54, 54)
+texture = ExtResource("2_p7a15")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

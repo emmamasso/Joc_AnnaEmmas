@@ -2,8 +2,10 @@ extends CharacterBody2D
 var direccio:=Vector2 (1,0)
 var velocitat_màxima:=100
 var banda
+func _ready():
+	$Tempsperdisparar.start()
 func _process(delta):
-	velocity = direccio.normalized()*velocitat_màxima
+	velocity= direccio.normalized()*velocitat_màxima
 	move_and_slide()
 	
 func canvia_direcció_dreta():
@@ -23,3 +25,7 @@ func _on_timer_timeout():
 		
 func explota():
 	queue_free()
+
+
+func _on_tempsperdisparar_timeout():
+	$Tempsperdisparar.start()
