@@ -13,6 +13,8 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	get_tree().change_scene_to_packed(escena_explosió_lasers)
+	var nova_explosio = escena_explosió_lasers.instantiate()
+	get_parent().add_child(nova_explosio)
+	nova_explosio.global_position = global_position
 	body.explota()
 	queue_free()

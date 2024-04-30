@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxx4kuyuat8po"]
+[gd_scene load_steps=8 format=3 uid="uid://dxx4kuyuat8po"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_laser.gd" id="1_4bjj3"]
 [ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_fm6cl"]
 [ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_tevip"]
+[ext_resource type="PackedScene" uid="uid://3am2qamtiii1" path="res://Escenes/escena_explosió_lasers.tscn" id="2_uph5d"]
 [ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_rwmsd"]
 [ext_resource type="Texture2D" uid="uid://dkm8ur5e82p3y" path="res://Imatges/Bales/laserGreen03.png" id="4_1wihw"]
 
@@ -30,6 +31,7 @@ animations = [{
 collision_layer = 4
 collision_mask = 26
 script = ExtResource("1_4bjj3")
+"escena_explosió_lasers" = ExtResource("2_uph5d")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.506412, 0.737138)
