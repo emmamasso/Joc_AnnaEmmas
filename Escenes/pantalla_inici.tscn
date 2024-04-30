@@ -16,34 +16,39 @@ grow_vertical = 2
 
 [node name="Fons" parent="." instance=ExtResource("1_jwo4g")]
 
-[node name="SPACE INVADERS" type="TextEdit" parent="."]
+[node name="SPACE INVADERS" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -368.0
-offset_top = 137.0
+offset_top = 104.0
 offset_right = 383.0
-offset_bottom = 208.0
+offset_bottom = 344.0
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("2_38k6a")
-theme_override_font_sizes/font_size = 65
-text = "SPACE INVADERS"
+theme_override_fonts/normal_font = ExtResource("2_38k6a")
+theme_override_font_sizes/normal_font_size = 120
+bbcode_enabled = true
+text = "[center]SPACE 
+INVADERS[/center]"
 text_direction = 1
 
-[node name="TextEdit" type="TextEdit" parent="."]
+[node name="TextEdit" type="RichTextLabel" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -327.0
-offset_top = 221.0
-offset_right = 327.0
-offset_bottom = 257.0
+anchor_bottom = 0.5
+offset_left = -371.0
+offset_top = -134.5
+offset_right = 371.0
+offset_bottom = -83.5
 grow_horizontal = 2
-theme_override_fonts/font = ExtResource("3_ch0nx")
-theme_override_font_sizes/font_size = 15
-text = "Anna Ortega Alsius, Emma Massó Sala, Emma Tarancón Estrada"
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_ch0nx")
+bbcode_enabled = true
+text = "[center]Anna Ortega Alsius, Emma Massó Sala, Emma Tarancón Estrada[/center]"
 
 [node name="instruccions" type="Button" parent="."]
 layout_mode = 1
@@ -53,9 +58,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -169.0
-offset_top = -80.5
+offset_top = 100.5
 offset_right = 169.0
-offset_bottom = -23.5
+offset_bottom = 157.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ch0nx")
@@ -71,9 +76,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -299.5
-offset_top = 27.5
+offset_top = 208.5
 offset_right = 299.5
-offset_bottom = 96.5
+offset_bottom = 277.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ch0nx")
