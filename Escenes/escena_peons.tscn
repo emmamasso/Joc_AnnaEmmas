@@ -13,6 +13,7 @@ collision_mask = 8
 script = ExtResource("1_gqu16")
 
 [node name="Tempsperdisparar" type="Timer" parent="SpaceShips"]
+wait_time = 10.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="SpaceShips"]
 scale = Vector2(0.75, 0.75)
@@ -23,7 +24,6 @@ scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_tlqnw")
 
 [node name="Timer" type="Timer" parent="SpaceShips"]
-wait_time = 10.0
 
 [connection signal="timeout" from="SpaceShips/Tempsperdisparar" to="SpaceShips" method="_on_tempsperdisparar_timeout"]
 [connection signal="timeout" from="SpaceShips/Timer" to="SpaceShips" method="_on_timer_timeout"]

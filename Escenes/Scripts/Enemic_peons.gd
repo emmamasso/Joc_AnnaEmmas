@@ -2,6 +2,7 @@ extends CharacterBody2D
 var direccio:=Vector2 (1,0)
 var velocitat_màxima:=100
 var banda
+var bala:PackedScene = load("res://Escenes/bales_peons.tscn")
 func _ready():
 	$Tempsperdisparar.start()
 func _process(delta):
@@ -29,3 +30,6 @@ func explota():
 
 func _on_tempsperdisparar_timeout():
 	$Tempsperdisparar.start()
+	var nova_bala = bala.instantiate()
+	nova_bala.global_position = global_position
+	%Balespeons.add_child(nova_bala)
