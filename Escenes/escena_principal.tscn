@@ -23,7 +23,7 @@ wait_time = 1.25
 unique_name_in_owner = true
 
 [node name="Escena Peons" parent="Peons" instance=ExtResource("1_1t4f8")]
-position = Vector2(116, 37)
+position = Vector2(41, 35)
 
 [node name="Lasers" type="Node2D" parent="."]
 unique_name_in_owner = true

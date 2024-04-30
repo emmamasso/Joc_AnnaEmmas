@@ -5,11 +5,12 @@ var banda
 var bala:PackedScene = load("res://Escenes/bales_peons.tscn")
 
 func _ready():
-	$Tempsperdisparar.start()
+	pass
 func _process(delta):
+	if position.x >= Vides.posicio_disparar1 and position.x <= Vides.posicio_disparar2:
+		self.disparar_bala()
 	velocity= direccio.normalized()*velocitat_màxima
 	move_and_slide()
-	
 func canvia_direcció_dreta():
 	direccio = Vector2(0,0.825)
 	banda = "dreta"
@@ -24,14 +25,10 @@ func _on_timer_timeout():
 		direccio = Vector2(1,0)
 	else:
 		direccio = Vector2(-1,0)
-		
 func explota():
 	queue_free()
 
-
-func _on_tempsperdisparar_timeout():
-	$Tempsperdisparar.start()
+func disparar_bala():
 	var nova_bala = bala.instantiate()
-
 	Vides.Balespeons.add_child(nova_bala)
 	nova_bala.global_position = global_position

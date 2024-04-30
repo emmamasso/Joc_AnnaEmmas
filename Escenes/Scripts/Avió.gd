@@ -36,5 +36,7 @@ func dispara():
 	nou_laser= escena_laser.instantiate()
 	nou_laser.global_position = global_position
 	%Lasers.add_child(nou_laser)
+func explota():
+	Vides.Vida += -1
 	 
 	

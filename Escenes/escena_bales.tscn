@@ -26,6 +26,7 @@ animations = [{
 }]
 
 [node name="escena_laser" type="Area2D"]
+collision_mask = 16
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 2)
