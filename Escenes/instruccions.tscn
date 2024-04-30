@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dw16dpfsf3ivo"]
+[gd_scene load_steps=4 format=3 uid="uid://dw16dpfsf3ivo"]
 
 [ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_v442a"]
+[ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_cbit3"]
+[ext_resource type="Script" path="res://Escenes/Scripts/ButtonHasPerdut.gd" id="3_j16fg"]
 
 [node name="INSTRUCCIONS" type="Control"]
 layout_mode = 3
@@ -12,9 +14,47 @@ grow_vertical = 2
 
 [node name="Fons" parent="." instance=ExtResource("1_v442a")]
 
-[node name="TextEdit" type="TextEdit" parent="."]
-layout_mode = 0
-offset_right = 832.0
-offset_bottom = 424.0
-text = "Aquest joc està inspirat en el clàssic \"space invaders\". 
-Com a jugador tindràs el control de la teva nau que és de color verd i el teu objectiu serà derrotar els enemics fent ús de la teva munició. Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'esuquivar les seves bales. Per sort, a l'inici de la partica hi ha una meteorits que podràs fer servir com a escut mentre durin. Això és tot així que només queda desitjar-te: BONA SORT!"
+[node name="TextEdit" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -329.5
+offset_top = -414.0
+offset_right = 329.5
+offset_bottom = 226.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_cbit3")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "[center]
+Aquest joc està inspirat en el clàssic \"space invaders\". 
+[/center]
+
+
+Com a jugador tindràs el control de la teva nau que és de color verd i el teu objectiu serà derrotar els enemics fent ús de la teva munició. Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'esuquivar les seves bales. Per sort, a l'inici de la partida hi ha una meteorits que podràs fer servir com a escut mentre durin. 
+
+Això és tot així que només queda desitjar-te: BONA SORT!"
+
+[node name="ButtonTornaAl\'Inici" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -245.0
+offset_top = -202.0
+offset_right = 245.0
+offset_bottom = -157.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_cbit3")
+theme_override_font_sizes/font_size = 30
+text = "Torna a la pantalla d'inici"
+script = ExtResource("3_j16fg")
+
+[connection signal="pressed" from="ButtonTornaAl'Inici" to="ButtonTornaAl'Inici" method="_on_pressed"]
