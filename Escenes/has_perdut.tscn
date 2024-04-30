@@ -33,21 +33,22 @@ theme_override_font_sizes/font_size = 40
 text = "Torna a la pantalla d'inici"
 script = ExtResource("3_a88pv")
 
-[node name="TextEdit" type="TextEdit" parent="."]
+[node name="TextEdit" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -350.5
-offset_top = -113.5
-offset_right = 350.5
-offset_bottom = -4.5
+offset_left = -350.0
+offset_top = -244.0
+offset_right = 351.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_8dlkp")
-theme_override_font_sizes/font_size = 80
-text = "HAS PERDUT"
+theme_override_fonts/normal_font = ExtResource("3_8dlkp")
+theme_override_font_sizes/normal_font_size = 125
+bbcode_enabled = true
+text = "[center]GAME OVER[/center]"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
