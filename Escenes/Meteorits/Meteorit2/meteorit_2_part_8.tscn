@@ -11,13 +11,11 @@ collision_mask = 12
 script = ExtResource("1_2crkl")
 
 [node name="MeteorBrownBig2" type="Sprite2D" parent="."]
-position = Vector2(5, 8)
 texture = ExtResource("2_jxr7m")
 region_enabled = true
 region_rect = Rect2(20, 20, 20, 20)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(5, 8)
 shape = SubResource("RectangleShape2D_dnx8w")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
