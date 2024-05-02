@@ -9,4 +9,5 @@ func _process(delta):
 	if posicio_disparar1 >= 825:
 		posicio_disparar1 += -825
 	if Vida==0:
+		Vida = 3
 		get_tree().change_scene_to_packed(game_over)
