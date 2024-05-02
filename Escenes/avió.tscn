@@ -13,3 +13,20 @@ texture = ExtResource("2_lx8pc")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 rotation = -3.11018
 polygon = PackedVector2Array(8.5, 27.9, 12.2, 10.5, 13.1, 10.5, 35.9, -3.4, 46.2, 4.8, 48.5, 3.8, 48.5, -7.5, 47.4, -7.5, 46.4, -24.5, 42.8, -24.5, 40.1, -22.5, 15.5, -27.2, 7.5, -37.5, -7.5, -37.5, -14.5, -27.5, -17.8, -27.5, -39.6, -21.5, -40.7, -21.5, -44, -24.9, -46.5, -23.8, -46.5, -14.5, -48.7, 4.5, -43.3, 4.5, -40.3, -1.5, -39, -1.5, -36.5, -2.8, -15.5, 7.7, -15.5, 8.5, -10.5, 12.5, -10.5, 19.8, -8.5, 26.5, -8.5, 35.5, 8.5, 35.5)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.065
+
+[node name="Timer2" type="Timer" parent="."]
+wait_time = 0.065
+
+[node name="Timer3" type="Timer" parent="."]
+wait_time = 0.065
+
+[node name="Timer4" type="Timer" parent="."]
+wait_time = 0.065
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="Timer4" to="." method="_on_timer_4_timeout"]
