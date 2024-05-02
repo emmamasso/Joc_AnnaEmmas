@@ -1,5 +1,5 @@
 extends Area2D
-var velocitat_maxima = 700
+var velocitat_maxima = 900
 var direccio:=Vector2 (0,1)
 # Called when the node enters the scene tree for the first time.
 func _ready():
