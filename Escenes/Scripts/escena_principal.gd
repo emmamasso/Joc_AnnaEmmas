@@ -16,4 +16,3 @@ func _on_timer_timeout():
 	$Temps.start()
 	nou_peo.position = posicio_inicial_peo
 	%Peons.add_child(nou_peo)
-	Vides.posicio_disparar1 += (randf())*100 

@@ -6,7 +6,7 @@
 [node name="Bales peons" type="Area2D"]
 rotation = -3.14079
 scale = Vector2(0.5, 0.5)
-collision_layer = 8
+collision_layer = 9
 script = ExtResource("1_d61qc")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

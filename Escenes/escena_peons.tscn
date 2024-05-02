@@ -22,4 +22,8 @@ texture = ExtResource("1_tlqnw")
 
 [node name="Timer" type="Timer" parent="SpaceShips"]
 
+[node name="TimerDisparar" type="Timer" parent="SpaceShips"]
+autostart = true
+
 [connection signal="timeout" from="SpaceShips/Timer" to="SpaceShips" method="_on_timer_timeout"]
+[connection signal="timeout" from="SpaceShips/TimerDisparar" to="SpaceShips" method="_on_timer_disparar_timeout"]
