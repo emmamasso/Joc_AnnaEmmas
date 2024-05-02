@@ -29,7 +29,7 @@ func _physics_process(delta):
 	move_and_slide()
 	#else:
 	#	velocity.x = 0
-
+	
 var nou_laser
 func dispara():
 	var escena_laser:PackedScene= load("res://Escenes/escena_laser.tscn")
@@ -38,5 +38,22 @@ func dispara():
 	%Lasers.add_child(nou_laser)
 func explota():
 	Vides.Vida += -1
-	 
-	
+	$Timer.start()
+func _on_timer_timeout():
+	self.modulate = Color(0.3,0.3,0.3)
+	$Timer2.start()
+
+func _on_timer_2_timeout():
+	self.modulate = Color(1,1,1)
+	$Timer.stop()
+	$Timer2.stop()
+	$Timer3.start()
+
+func _on_timer_3_timeout():
+	self.modulate = Color(0.3,0.3,0.3)
+	$Timer3.stop()
+	$Timer4.start()
+
+func _on_timer_4_timeout():
+	self.modulate = Color(1,1,1)
+	$Timer4.stop()
