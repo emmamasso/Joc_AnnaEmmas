@@ -12,4 +12,8 @@ func _process(delta):
 
 func _on_body_entered(body):
 	body.explota()
+	$SpaceMissiles013. play ("Final")
+	$Timer.start()
+
+func _on_timer_timeout():
 	queue_free()

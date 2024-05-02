@@ -1,7 +1,34 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6u23yuby3hgb"]
+[gd_scene load_steps=8 format=3 uid="uid://c6u23yuby3hgb"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/bales_peons.gd" id="1_d61qc"]
 [ext_resource type="Texture2D" uid="uid://0spkou0lqjk8" path="res://Imatges/Enemics/spaceMissiles_013.png" id="2_p7a15"]
+[ext_resource type="Texture2D" uid="uid://dcywcgegndvyo" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_014.png" id="3_mxusc"]
+[ext_resource type="Texture2D" uid="uid://r5wufngfmvu6" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_013.png" id="4_1kh3m"]
+[ext_resource type="Texture2D" uid="uid://bra1afvwdvpaf" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_010.png" id="5_lqrb5"]
+[ext_resource type="Texture2D" uid="uid://rdu0dcsh5i4m" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_016.png" id="6_ratxl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h0wmv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_p7a15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mxusc")
+}, {
+"duration": 0.8,
+"texture": ExtResource("4_1kh3m")
+}, {
+"duration": 0.8,
+"texture": ExtResource("5_lqrb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ratxl")
+}],
+"loop": false,
+"name": &"Final",
+"speed": 4.0
+}]
 
 [node name="Bales peons" type="Area2D"]
 rotation = -3.14079
@@ -13,8 +40,14 @@ script = ExtResource("1_d61qc")
 scale = Vector2(0.5, 0.5)
 polygon = PackedVector2Array(5, -20, 12, -15, 12, -10, 16, 17.9, 16, 20, -16, 20, -16, 4.2, -13, 1.2, -13, -10.2, -11.6, -16, -9.7, -16, -5, -19.9, -5, -22, 5, -22)
 
-[node name="SpaceMissiles013" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_p7a15")
+[node name="SpaceMissiles013" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.439599, 2.91717)
+scale = Vector2(0.710841, 0.719838)
+sprite_frames = SubResource("SpriteFrames_h0wmv")
+animation = &"Final"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
