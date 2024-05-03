@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cljbmmrjo8j5l"]
+
+[ext_resource type="PackedScene" uid="uid://xw3riprurcqe" path="res://Escenes/Meteorits/Meteorit3/meteorit_3_part_1.tscn" id="1_71vbl"]
+[ext_resource type="PackedScene" uid="uid://bw1eo1j7ahnya" path="res://Escenes/Meteorits/Meteorit3/meteorit_3_part_2.tscn" id="2_euv4h"]
+[ext_resource type="PackedScene" uid="uid://caxukvxg6up7g" path="res://Escenes/Meteorits/Meteorit3/meteortit_3_part_3.tscn" id="3_8sl58"]
+[ext_resource type="PackedScene" uid="uid://c8pfm2b6s15ot" path="res://Escenes/Meteorits/Meteorit3/meteorit_3_part_4.tscn" id="4_6u88x"]
+
+[node name="Meteorit3" type="Node2D"]
+
+[node name="meteorit3part1" parent="." instance=ExtResource("1_71vbl")]
+
+[node name="meteorit3part2" parent="." instance=ExtResource("2_euv4h")]
+position = Vector2(20, 0)
+
+[node name="meteortit3part3" parent="." instance=ExtResource("3_8sl58")]
+position = Vector2(40, 0)
+
+[node name="meteorit3part4" parent="." instance=ExtResource("4_6u88x")]
+position = Vector2(60, 0)
