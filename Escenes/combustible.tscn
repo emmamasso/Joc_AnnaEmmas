@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ds6p6yww37yr"]
+
+[node name="combustible" type="Node2D"]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0, 0.921569, 0, 1)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_top = 1.0
+offset_right = 40.0
+offset_bottom = 13.0
+rotation = 1.5708
+tint_progress = Color(0.368627, 0.266667, 1, 1)
