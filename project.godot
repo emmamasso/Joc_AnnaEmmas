@@ -51,3 +51,4 @@ dispara={
 2d_physics/layer_3="Projectils jugador"
 2d_physics/layer_4="Projectils enemic"
 2d_physics/layer_5="Meteorits"
+2d_physics/layer_6="PowerUps"

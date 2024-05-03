@@ -11,7 +11,5 @@ func _process(delta):
 	pass
 
 
-func _on_area_entered(area):
-	queue_free()
-	area.explota()
-	
+func _on_body_entered(body):
+	body.bales+=5
