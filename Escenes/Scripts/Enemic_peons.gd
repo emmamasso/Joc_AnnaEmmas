@@ -6,6 +6,7 @@ var bala:PackedScene = load("res://Escenes/bales_peons.tscn")
 
 func _ready():
 	$TimerDisparar.wait_time = randf_range(1, 10)
+	$TimerDisparar.start()
 func _process(delta):
 	velocity= direccio.normalized()*velocitat_màxima
 	move_and_slide()
