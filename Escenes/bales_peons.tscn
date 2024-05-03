@@ -24,7 +24,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Final",
-"speed": 4.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -51,5 +51,6 @@ scale = Vector2(0.710841, 0.719838)
 sprite_frames = SubResource("SpriteFrames_h0wmv")
 animation = &"Normal"
 
+[connection signal="area_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="SpaceMissiles013" to="." method="_on_space_missiles_013_animation_finished"]
