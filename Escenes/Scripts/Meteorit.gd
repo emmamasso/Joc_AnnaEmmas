@@ -13,7 +13,5 @@ func _process(delta):
 
 func _on_area_entered(area):
 	queue_free()
-	
-func explota():
-	queue_free()
+	area.queue_free()
 	
