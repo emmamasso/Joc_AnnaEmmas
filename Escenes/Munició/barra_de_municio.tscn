@@ -46,7 +46,7 @@ offset_bottom = 64.0
 [node name="municio4" parent="." instance=ExtResource("6_4wpuh")]
 layout_mode = 0
 offset_left = 2.0
-offset_top = 46.0
+offset_top = 47.0
 offset_right = 22.0
 offset_bottom = 55.0
 
