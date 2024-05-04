@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://xdx0xgnn4qds"]
+
+[ext_resource type="Script" path="res://Poweruptimer.gd" id="1_0exbx"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_0exbx")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -48,4 +48,7 @@ offset_right = 134.0
 offset_bottom = 1054.0
 rotation = 1.5708
 
+[node name="TimerPowerUpMunicio" type="Timer" parent="."]
+
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]

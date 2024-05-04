@@ -4,17 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://yomduavxd351" path="res://Imatges/PowerUps/powerupGreen_shield.png" id="2_sntx3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rmaem"]
-size = Vector2(15, 16)
+size = Vector2(30, 32.381)
 
 [node name="PowerUpMunicio" type="Area2D"]
 collision_layer = 32
 script = ExtResource("1_ik83v")
 
 [node name="PowerupGreenShield" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_sntx3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
 scale = Vector2(1.1, 1.05)
 shape = SubResource("RectangleShape2D_rmaem")
 
