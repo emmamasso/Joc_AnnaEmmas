@@ -5,5 +5,5 @@
 [node name="municio1" type="ColorRect"]
 offset_right = 20.0
 offset_bottom = 8.0
-color = Color(0.309804, 0.839216, 0.345098, 1)
+color = Color(0, 1, 0, 1)
 script = ExtResource("1_hwdjb")

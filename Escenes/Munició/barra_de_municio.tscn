@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://myeljv2fkc50"]
+[gd_scene load_steps=8 format=3 uid="uid://myeljv2fkc50"]
 
 [ext_resource type="PackedScene" uid="uid://20lv66emef11" path="res://Escenes/Munició/vores_municio.tscn" id="1_hw7wj"]
 [ext_resource type="PackedScene" uid="uid://dtnawilj8jw2t" path="res://Escenes/Munició/municio0.tscn" id="2_3jmef"]
 [ext_resource type="PackedScene" uid="uid://b4ikifmlh8ll3" path="res://Escenes/Munició/municio_1.tscn" id="3_mjl76"]
+[ext_resource type="PackedScene" uid="uid://dwgur05el8lkn" path="res://Escenes/Munició/municio_2.tscn" id="4_c0slc"]
+[ext_resource type="PackedScene" uid="uid://djfwf7y3h88lu" path="res://Escenes/Munició/municio_3.tscn" id="5_qf05k"]
+[ext_resource type="PackedScene" uid="uid://p5vjo0ipfjc6" path="res://Escenes/Munició/municio_4.tscn" id="6_4wpuh"]
+[ext_resource type="PackedScene" uid="uid://utojsq1pvk1f" path="res://Escenes/Munició/municio_5.tscn" id="7_3p4kh"]
 
 [node name="BarraDeMunicio" type="ColorRect"]
 offset_right = 24.0
@@ -24,3 +28,31 @@ offset_left = 2.0
 offset_top = 74.0
 offset_right = 22.0
 offset_bottom = 82.0
+
+[node name="municio2" parent="." instance=ExtResource("4_c0slc")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 65.0
+offset_right = 22.0
+offset_bottom = 73.0
+
+[node name="municio3" parent="." instance=ExtResource("5_qf05k")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 56.0
+offset_right = 22.0
+offset_bottom = 64.0
+
+[node name="municio4" parent="." instance=ExtResource("6_4wpuh")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 46.0
+offset_right = 22.0
+offset_bottom = 55.0
+
+[node name="municio5" parent="." instance=ExtResource("7_3p4kh")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 38.0
+offset_right = 22.0
+offset_bottom = 46.0
