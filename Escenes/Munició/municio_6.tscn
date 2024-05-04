@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjkfn1ecyaufe"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/Municions/Municio6.gd" id="1_nf44l"]
+
+[node name="Municio6" type="ColorRect"]
+offset_right = 20.0
+offset_bottom = 8.0
+color = Color(0, 1, 0, 1)
+script = ExtResource("1_nf44l")
