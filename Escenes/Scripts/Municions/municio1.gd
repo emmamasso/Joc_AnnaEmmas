@@ -3,12 +3,12 @@ extends ColorRect
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	color=Color(0,255,0,255)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Vides.bales==1:
-		color = Color(180,28,0,255)
+	if Vides.bales<=1:
+		color = Color(255,0,0,255)
 	else:
-		color=Color(79,214,88,255)
+		color=Color(0,255,0,255)

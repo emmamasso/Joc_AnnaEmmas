@@ -32,10 +32,14 @@ func _physics_process(delta):
 	
 var nou_laser
 func dispara():
-	var escena_laser:PackedScene= load("res://Escenes/escena_laser.tscn")
-	nou_laser= escena_laser.instantiate()
-	nou_laser.global_position = global_position
-	%Lasers.add_child(nou_laser)
+	if Vides.bales>0:
+		var escena_laser:PackedScene= load("res://Escenes/escena_laser.tscn")
+		nou_laser= escena_laser.instantiate()
+		nou_laser.global_position = global_position
+		%Lasers.add_child(nou_laser)
+		Vides.bales+= -1
+	else:
+		pass
 func explota():
 	Vides.Vida += -1
 	$Timer.start()
