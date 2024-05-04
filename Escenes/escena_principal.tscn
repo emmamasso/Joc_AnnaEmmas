@@ -50,5 +50,8 @@ rotation = 1.5708
 
 [node name="TimerPowerUpMunicio" type="Timer" parent="."]
 
+[node name="TimerPowerUpVides" type="Timer" parent="."]
+
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
+[connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
