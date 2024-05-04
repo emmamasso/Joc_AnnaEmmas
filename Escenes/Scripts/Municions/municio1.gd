@@ -1,4 +1,4 @@
-extends Area2D
+extends ColorRect
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,10 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-
-
-func _on_area_entered(area):
-	queue_free()
- 	area.explota()
-	
+	if Vides.bales==1:
+		color = Color(180,28,0,255)
+	else:
+		color=Color(79,214,88,255)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://myeljv2fkc50"]
+
+[ext_resource type="PackedScene" uid="uid://20lv66emef11" path="res://Escenes/Munició/vores_municio.tscn" id="1_hw7wj"]
+[ext_resource type="PackedScene" uid="uid://dtnawilj8jw2t" path="res://Escenes/Munició/municio0.tscn" id="2_3jmef"]
+[ext_resource type="PackedScene" uid="uid://b4ikifmlh8ll3" path="res://Escenes/Munició/municio_1.tscn" id="3_mjl76"]
+
+[node name="BarraDeMunicio" type="ColorRect"]
+offset_right = 24.0
+offset_bottom = 93.0
+color = Color(0.282353, 0.294118, 0.32549, 1)
+
+[node name="VoresMunicio" parent="." instance=ExtResource("1_hw7wj")]
+
+[node name="municio0" parent="." instance=ExtResource("2_3jmef")]
+layout_mode = 0
+offset_top = 83.0
+offset_bottom = 91.0
+
+[node name="municio1" parent="." instance=ExtResource("3_mjl76")]
+layout_mode = 0
+offset_top = 74.0
+offset_bottom = 82.0
