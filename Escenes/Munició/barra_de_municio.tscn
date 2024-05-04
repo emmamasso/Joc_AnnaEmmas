@@ -13,10 +13,14 @@ color = Color(0.282353, 0.294118, 0.32549, 1)
 
 [node name="municio0" parent="." instance=ExtResource("2_3jmef")]
 layout_mode = 0
+offset_left = 2.0
 offset_top = 83.0
+offset_right = 22.0
 offset_bottom = 91.0
 
 [node name="municio1" parent="." instance=ExtResource("3_mjl76")]
 layout_mode = 0
+offset_left = 2.0
 offset_top = 74.0
+offset_right = 22.0
 offset_bottom = 82.0
