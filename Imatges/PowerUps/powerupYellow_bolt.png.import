@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vqo4pulttb6a"
-path="res://.godot/imported/powerupGreen_bolt.png-f8467cc606279f401b13723297051aea.ctex"
+uid="uid://dp0vahludofmw"
+path="res://.godot/imported/powerupYellow_bolt.png-18621e86c1ec32eda7a8e68815e47068.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/PowerUps/powerupGreen_bolt.png"
-dest_files=["res://.godot/imported/powerupGreen_bolt.png-f8467cc606279f401b13723297051aea.ctex"]
+source_file="res://Imatges/PowerUps/powerupYellow_bolt.png"
+dest_files=["res://.godot/imported/powerupYellow_bolt.png-18621e86c1ec32eda7a8e68815e47068.ctex"]
 
 [params]
 
