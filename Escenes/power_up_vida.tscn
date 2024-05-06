@@ -7,6 +7,7 @@
 size = Vector2(32.5, 32)
 
 [node name="PowerUpVida" type="Area2D"]
+collision_layer = 32
 script = ExtResource("1_arv18")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
