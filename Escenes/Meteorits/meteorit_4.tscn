@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dph8n8imfkvrc"]
+[gd_scene load_steps=16 format=3 uid="uid://dph8n8imfkvrc"]
 
 [ext_resource type="PackedScene" uid="uid://dxms3v38e5mae" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_1.tscn" id="1_gn7am"]
 [ext_resource type="PackedScene" uid="uid://dajt0w0ydxukg" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_2.tscn" id="2_17684"]
@@ -10,6 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://enht1ygnq6w8" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_8.tscn" id="8_gl5g7"]
 [ext_resource type="PackedScene" uid="uid://7okhixc52p1w" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_9.tscn" id="9_83wrc"]
 [ext_resource type="PackedScene" uid="uid://bydkdjiegcq3a" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_10.tscn" id="10_bekiy"]
+[ext_resource type="PackedScene" uid="uid://cilngavd5b2bp" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_11.tscn" id="11_3kjpu"]
+[ext_resource type="PackedScene" uid="uid://bc4inxmdqw2u0" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_12.tscn" id="12_51qxc"]
+[ext_resource type="PackedScene" uid="uid://ck662x10ycorw" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_13.tscn" id="13_sx2r4"]
+[ext_resource type="PackedScene" uid="uid://b4n3gkrddjjy5" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_14.tscn" id="14_xwlaf"]
+[ext_resource type="PackedScene" uid="uid://c3007eswnhncb" path="res://Escenes/meteorits/Meteorit 4/meteorit_4_part_15.tscn" id="15_3f1g4"]
 
 [node name="meteorit4" type="Node2D"]
 
@@ -41,3 +46,18 @@ position = Vector2(60, 20)
 
 [node name="meteorit4part10" parent="." instance=ExtResource("10_bekiy")]
 position = Vector2(79, 20)
+
+[node name="meteorit4part11" parent="." instance=ExtResource("11_3kjpu")]
+position = Vector2(0, 40)
+
+[node name="meteorit4part12" parent="." instance=ExtResource("12_51qxc")]
+position = Vector2(20, 40)
+
+[node name="meteorit4part13" parent="." instance=ExtResource("13_sx2r4")]
+position = Vector2(40, 40)
+
+[node name="meteorit4part14" parent="." instance=ExtResource("14_xwlaf")]
+position = Vector2(60, 40)
+
+[node name="meteorit4part15" parent="." instance=ExtResource("15_3f1g4")]
+position = Vector2(80, 40)
