@@ -1,19 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjsycvvqab4c5"]
+[gd_scene load_steps=4 format=3 uid="uid://bjsycvvqab4c5"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Meteorit.gd" id="1_o6u4s"]
-[ext_resource type="Texture2D" uid="uid://c84bisdbisy3v" path="res://Imatges/Meteorits/meteorBrown_big1.png" id="2_mye3d"]
+[ext_resource type="Texture2D" uid="uid://cigjutj6d80fv" path="res://Imatges/Meteorits/meteorBrown_big4.png" id="2_pvju1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12s0k"]
 
 [node name="meteorit1part17" type="Area2D"]
 collision_layer = 16
 collision_mask = 12
 script = ExtResource("1_o6u4s")
 
-[node name="MeteorBrownBig1" type="Sprite2D" parent="."]
-texture = ExtResource("2_mye3d")
+[node name="MeteorBrownBig4" type="Sprite2D" parent="."]
+texture = ExtResource("2_pvju1")
 region_enabled = true
 region_rect = Rect2(20, 60, 20, 20)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-10, -10, 10, -10, 10, 9, 9, 10, -5, 10, -10, 4)
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_12s0k")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
