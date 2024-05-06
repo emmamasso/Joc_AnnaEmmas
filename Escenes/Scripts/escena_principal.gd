@@ -11,9 +11,9 @@ var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
 func _ready():
 	$Temps.start()
 	Vides.Vida=3
-	$TimerPowerUpMunicio.wait_time=randf_range(10,20)
+	$TimerPowerUpMunicio.wait_time=randf_range(10,15)
 	$TimerPowerUpMunicio.start()
-	$TimerPowerUpVides.wait_time=randf_range(20,30)
+	$TimerPowerUpVides.wait_time=randf_range(15,25)
 	$TimerPowerUpVides.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,11 +31,11 @@ func _on_timer_timeout():
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()
 	add_child(nou_powerup)
-	$TimerPowerUpMunicio.wait_time=randf_range(5,20)
+	$TimerPowerUpMunicio.wait_time=randf_range(5,15)
 	$TimerPowerUpMunicio.start()
 	
 func _on_timer_power_up_vides_timeout():
 	var nova_vida= powerupvida.instantiate()
 	add_child(nova_vida)
-	$TimerPowerUpVides.wait_time=randf_range(10,20)
+	$TimerPowerUpVides.wait_time=randf_range(10,15)
 	$TimerPowerUpVides.start()
