@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://77x0mdfpv7ao"
+path="res://.godot/imported/sfx_laser1.ogg-1492d17abb35e6149ea71bd1594eefd9.oggvorbisstr"
+
+[deps]
+
+source_file="res://Música i Efectes de So/sfx_laser1.ogg"
+dest_files=["res://.godot/imported/sfx_laser1.ogg-1492d17abb35e6149ea71bd1594eefd9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
