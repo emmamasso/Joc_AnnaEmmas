@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyyw071cr5y7m"
+path="res://.godot/imported/8bit-music-for-game-68698.mp3-90843a621e7e3faf7f9ca61d0ee8971b.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/Música/8bit-music-for-game-68698.mp3"
+dest_files=["res://.godot/imported/8bit-music-for-game-68698.mp3-90843a621e7e3faf7f9ca61d0ee8971b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Avió.gd" id="1_02o88"]
 [ext_resource type="Texture2D" uid="uid://dr0evfuyo4j30" path="res://Imatges/Avió.png" id="2_lx8pc"]
-[ext_resource type="AudioStream" uid="uid://77x0mdfpv7ao" path="res://Música i Efectes de So/sfx_laser1.ogg" id="3_ao5ls"]
+[ext_resource type="AudioStream" uid="uid://77x0mdfpv7ao" path="res://Música i Efectes de So/So/sfx_laser1.ogg" id="3_ao5ls"]
 
 [node name="Avió" type="CharacterBody2D"]
 position = Vector2(-1, 1)

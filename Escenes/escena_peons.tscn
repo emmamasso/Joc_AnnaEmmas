@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Enemic_peons.gd" id="1_gqu16"]
 [ext_resource type="Texture2D" uid="uid://dfqgwvrk0na6m" path="res://Imatges/Enemics/Peons/spaceShips_008.png" id="1_tlqnw"]
-[ext_resource type="AudioStream" uid="uid://d0qhhb37b2g48" path="res://Música i Efectes de So/sfx_laser2.ogg" id="3_yqvl0"]
+[ext_resource type="AudioStream" uid="uid://d0qhhb37b2g48" path="res://Música i Efectes de So/So/sfx_laser2.ogg" id="3_yqvl0"]
 
 [node name="SpaceShips" type="CharacterBody2D"]
 position = Vector2(1, -1)

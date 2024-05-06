@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqti75nbrpfg6"
+path="res://.godot/imported/short-chiptune-loop-63966.mp3-17bbd22231ea4f91f49dde12c623c99b.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/Música/short-chiptune-loop-63966.mp3"
+dest_files=["res://.godot/imported/short-chiptune-loop-63966.mp3-17bbd22231ea4f91f49dde12c623c99b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
