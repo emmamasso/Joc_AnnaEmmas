@@ -6,7 +6,7 @@
 size = Vector2(870, 11)
 
 [node name="BarraLimitEnemics" type="Area2D"]
-collision_layer = 2
+collision_layer = 64
 collision_mask = 2
 script = ExtResource("1_clom0")
 
@@ -22,4 +22,4 @@ text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 position = Vector2(425, 50.5)
 shape = SubResource("RectangleShape2D_sqtff")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

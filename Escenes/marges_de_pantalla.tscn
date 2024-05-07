@@ -15,7 +15,7 @@ size = Vector2(866, 20)
 [node name="Marges de pantalla" type="Node2D"]
 
 [node name="Area esquerra" type="Area2D" parent="."]
-collision_layer = 2
+collision_layer = 64
 collision_mask = 2
 script = ExtResource("1_ory02")
 
@@ -25,7 +25,7 @@ position = Vector2(-8, 500)
 shape = SubResource("RectangleShape2D_k7uto")
 
 [node name="Area dreta" type="Area2D" parent="."]
-collision_layer = 2
+collision_layer = 64
 collision_mask = 2
 script = ExtResource("2_dyvdy")
 
@@ -35,7 +35,7 @@ position = Vector2(865, 496)
 shape = SubResource("RectangleShape2D_80jf2")
 
 [node name="Area superior" type="Area2D" parent="."]
-collision_layer = 2
+collision_layer = 64
 collision_mask = 2
 
 [node name="Collision superior" type="CollisionShape2D" parent="Area superior"]
