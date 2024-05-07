@@ -15,7 +15,6 @@ func _process(delta):
 func _on_surt_pressed():
 	get_tree().quit()
 
-
-
 func _on_continua_pressed():
-	pass # Replace with function body.
+	visible=false
+	get_tree().paused=false
