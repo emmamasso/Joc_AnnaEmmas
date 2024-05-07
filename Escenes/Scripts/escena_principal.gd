@@ -30,11 +30,12 @@ func _on_timer_timeout():
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeons += 1
 	else:
-		nou_noble = EscenaNobles.instantiate()
-		$Temps.start()
-		nou_noble.position = posicio_inicial_noble
-		%Nobles.add_child(nou_noble)
-		Vides.nombrenobles += 1
+		#nou_noble = EscenaNobles.instantiate()
+		#$Temps.start()
+		#nou_noble.position = posicio_inicial_noble
+		#%Nobles.add_child(nou_noble)
+		#Vides.nombrenobles += 1
+		pass
 
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()
