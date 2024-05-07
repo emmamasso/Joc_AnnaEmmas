@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj5rodu3mx0hi"]
+
+[ext_resource type="PackedScene" uid="uid://btktudwx0kmcr" path="res://Escenes/Meteorits/meteorit_1.tscn" id="1_vba0p"]
+[ext_resource type="Script" path="res://Escenes/Scripts/meteoritapareix.gd" id="2_bb2e5"]
+
+[node name="Meteorit1" instance=ExtResource("1_vba0p")]
+script = ExtResource("2_bb2e5")

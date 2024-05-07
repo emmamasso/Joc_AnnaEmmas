@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ef42jtqfprct"]
 
-[ext_resource type="Script" path="res://BarraLimitEnemics.gd" id="1_clom0"]
+[ext_resource type="Script" path="res://Escenes/Scripts/BarraLimitEnemics.gd" id="1_clom0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sqtff"]
 size = Vector2(870, 11)

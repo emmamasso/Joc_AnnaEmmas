@@ -8,10 +8,10 @@ var powerupmunicio:PackedScene = load("res://Escenes/power_up_municio.tscn")
 var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
 var EscenaNobles: PackedScene = load("res://Escenes/nobles.tscn")
 var posicio_inicial_noble = Vector2( -13, -22)
-var meteorit1:PackedScene = load("res://Escenes/Meteorits/meteorit_1.tscn")
-var meteorit2:PackedScene = load("res://Escenes/Meteorits/meteorit_2.tscn")
-var meteorit3:PackedScene = load("res://Escenes/Meteorits/meteorit_3.tscn")
-var meteorit4:PackedScene = load("res://Escenes/Meteorits/meteorit_4.tscn")
+var meteorit1:PackedScene = load("res://Escenes/Meteorits/meteorit_1apareix.tscn")
+var meteorit2:PackedScene = load("res://Escenes/Meteorits/meteorit_2apareix.tscn")
+var meteorit3:PackedScene = load("res://Escenes/Meteorits/meteorit_3apareix.tscn")
+var meteorit4:PackedScene = load("res://Escenes/Meteorits/meteorit_4apareix.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,7 +21,7 @@ func _ready():
 	$TimerPowerUpMunicio.start()
 	$TimerPowerUpVides.wait_time=randf_range(15,25)
 	$TimerPowerUpVides.start()
-	$MeteoritNou.wait_time=randf_range(35,55)
+	$MeteoritNou.wait_time=randf_range(50,70)
 	$MeteoritNou.start()
 	$musica.play()
 
@@ -64,14 +64,18 @@ func _on_musica_finished():
 	
 
 func _on_meteorit_nou_timeout():
-	var meteorit_numero=randf_range(1,4)
+	var meteorit_numero=randi_range(1,4)
 	if meteorit_numero==1:
 		var nou_meteorit = meteorit1.instantiate()
+		add_child(nou_meteorit)        
 	elif meteorit_numero==2:
 		var nou_meteorit = meteorit2.instantiate()
+		add_child(nou_meteorit)
 	elif meteorit_numero==3:
 		var nou_meteorit = meteorit3.instantiate()
+		add_child(nou_meteorit)
 	else:
 		var nou_meteorit = meteorit4.instantiate()
+		add_child(nou_meteorit)
 	$MeteoritNou.wait_time=randf_range(30,40)
 	$MeteoritNou.start()
