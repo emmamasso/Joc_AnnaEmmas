@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxok87yohwqo"
+path="res://.godot/imported/sfx_zap.ogg-9dfa29cc292bc70902515ae79ff428e5.oggvorbisstr"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/sfx_zap.ogg"
+dest_files=["res://.godot/imported/sfx_zap.ogg-9dfa29cc292bc70902515ae79ff428e5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
