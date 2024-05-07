@@ -6,7 +6,8 @@ var nou_peo
 var posicio_inicial_peo = Vector2(41, 35)
 var powerupmunicio:PackedScene = load("res://Escenes/power_up_municio.tscn")
 var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
-
+var EscenaNobles: PackedScene = load("res://Escenes/nobles.tscn")
+var posicio_inicial_noble = Vector2( -13, -22)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Temps.start()
@@ -32,12 +33,11 @@ func _on_timer_timeout():
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeo += 1
 	else:
-		#var nou_noble = EscenaNobles.instantiate()
-		#$Temps.start()
-		#nou_noble.position = posicio_inicial_noble
-		#%Nobles.add_child(nou_noble)
-		#Vides.nombrenobles += 1
-		pass
+		var nou_noble = EscenaNobles.instantiate()
+		$Temps.start()
+		nou_noble.position = posicio_inicial_noble
+		%Nobles.add_child(nou_noble)
+		Vides.nombrenobles += 1
 
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()
