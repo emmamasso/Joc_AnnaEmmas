@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ef42jtqfprct"]
+
+[ext_resource type="Script" path="res://BarraLimitEnemics.gd" id="1_clom0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqtff"]
+size = Vector2(870, 11)
+
+[node name="BarraLimitEnemics" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_clom0")
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+offset_left = -20.0
+offset_right = 1006.0
+offset_bottom = 133.0
+theme_override_colors/default_color = Color(0.101961, 0.109804, 0.12549, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ "
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(425, 50.5)
+shape = SubResource("RectangleShape2D_sqtff")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
