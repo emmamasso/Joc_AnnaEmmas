@@ -2,7 +2,7 @@ extends CharacterBody2D
 var direccio:=Vector2 (1,0)
 var velocitat_màxima:=100
 var banda
-var bala:PackedScene = load("res://Escenes/bales_peons.tscn")
+var bala:PackedScene = load("res://Escenes/bales_nobles.tscn")
 
 func _ready():
 	$TimerDisparar.wait_time = randf_range(3, 15)
@@ -29,11 +29,11 @@ func explota():
 
 func disparar_bala():
 	var nova_bala = bala.instantiate()
-	Vides.Balespeons.add_child(nova_bala)
+	Vides.Balesnobles.add_child(nova_bala)
 	nova_bala.global_position = global_position
 	$SorollBala.play()
 
 
 func _on_timer_disparar_timeout():
 	disparar_bala()
-	$TimerDisparar.wait_time = randf_range(3,15)
+	$TimerDisparar.wait_time = randf_range(1,10)
