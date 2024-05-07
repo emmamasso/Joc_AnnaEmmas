@@ -21,8 +21,10 @@ func _on_continua_pressed():
 
 
 func _on_pantalla_dinici_pressed():
+	get_tree().paused=false
 	get_tree().change_scene_to_packed(pantallainici)
 
 
 func _on_partidanova_pressed():
+	get_tree().paused=false
 	get_tree().change_scene_to_packed(escenaprinicpal)

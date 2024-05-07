@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://btld4uamm4t8n" path="res://Escenes/nobles.tscn" id="10_2vrrt"]
 [ext_resource type="PackedScene" path="res://Escenes/bales_nobles.tscn" id="11_jcuyv"]
 [ext_resource type="Script" path="res://Escenes/Scripts/Balanobles.gd" id="12_ak2gg"]
-[ext_resource type="PackedScene" path="res://Escenes/menu.tscn" id="13_vh3il"]
+[ext_resource type="PackedScene" uid="uid://cb6jbbojwg1b8" path="res://Escenes/menu.tscn" id="13_vh3il"]
 [ext_resource type="AudioStream" uid="uid://bwf7swki6xo7v" path="res://Música i Efectes de So/Música/retro-wave-melodie-128-bpm-8970.mp3" id="14_j23b8"]
 
 [node name="Escena Principal" type="Node2D"]

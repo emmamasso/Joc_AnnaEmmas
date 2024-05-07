@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://b43hbwatyykm1"]
+[gd_scene load_steps=3 format=3 uid="uid://cb6jbbojwg1b8"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Menu.gd" id="1_1sqjv"]
 [ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_4qx4w"]
@@ -12,7 +12,7 @@ offset_left = -32.0
 offset_top = -16.0
 offset_right = 872.0
 offset_bottom = 1016.0
-color = Color(0.164706, 0.176471, 0.2, 0.392157)
+color = Color(0.164706, 0.176471, 0.2, 0.733333)
 
 [node name="Continua" type="Button" parent="."]
 anchors_preset = 8

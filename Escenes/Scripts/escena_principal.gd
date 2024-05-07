@@ -54,4 +54,4 @@ func _on_timer_power_up_vides_timeout():
 
 func _on_musica_finished():
 	$musica.play()
-	print("ja ha tornat a començar")
+	
