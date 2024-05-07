@@ -20,14 +20,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -39.5
-offset_top = -15.5
-offset_right = 39.5
-offset_bottom = 15.5
+offset_left = -183.0
+offset_top = -264.5
+offset_right = 183.0
+offset_bottom = -183.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_4qx4w")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 110
 text = "Continua"
 
 [node name="Surt" type="Button" parent="."]
@@ -37,14 +37,49 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -85.0
-offset_top = -165.5
+offset_top = 177.5
 offset_right = 85.0
-offset_bottom = -84.5
+offset_bottom = 258.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_4qx4w")
+theme_override_font_sizes/font_size = 70
+text = "SURT"
+
+[node name="Pantalla d\'inici" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -277.5
+offset_top = 71.5
+offset_right = 277.5
+offset_bottom = 152.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_4qx4w")
 theme_override_font_sizes/font_size = 60
-text = "Surt"
+text = "Pantalla d'inici
+"
+
+[node name="partidanova" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -259.0
+offset_top = -138.5
+offset_right = 259.0
+offset_bottom = -57.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_4qx4w")
+theme_override_font_sizes/font_size = 60
+text = "Partida nova"
 
 [connection signal="pressed" from="Continua" to="." method="_on_continua_pressed"]
 [connection signal="pressed" from="Surt" to="." method="_on_surt_pressed"]
+[connection signal="pressed" from="Pantalla d'inici" to="." method="_on_pantalla_dinici_pressed"]
+[connection signal="pressed" from="partidanova" to="." method="_on_partidanova_pressed"]
