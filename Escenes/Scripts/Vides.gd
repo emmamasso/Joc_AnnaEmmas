@@ -5,6 +5,8 @@ var Balesnobles: Node2D
 var posicio_disparar1 = 40
 var posicio_disparar2 = 42
 var bales=10
+var nombrepeo =0
+var nombrenobles =0
 func _process(delta):
 	posicio_disparar2 = posicio_disparar1 + 2
 	if posicio_disparar1 >= 825:

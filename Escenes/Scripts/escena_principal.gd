@@ -23,10 +23,18 @@ func _process(delta):
 		get_tree().change_scene_to_packed(game_over)
 
 func _on_timer_timeout():
-	nou_peo = EscenaPeons.instantiate()
-	$Temps.start()
-	nou_peo.position = posicio_inicial_peo
-	%Peons.add_child(nou_peo)
+	if Vides.nombrepeons<20:
+		nou_peo = EscenaPeons.instantiate()
+		$Temps.start()
+		nou_peo.position = posicio_inicial_peo
+		%Peons.add_child(nou_peo)
+		Vides.nombrepeons += 1
+	else:
+		nou_noble = EscenaNobles.instantiate()
+		$Temps.start()
+		nou_noble.position = posicio_inicial_noble
+		%Nobles.add_child(nou_noble)
+		Vides.nombrenobles += 1
 
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()

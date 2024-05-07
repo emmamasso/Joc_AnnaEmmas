@@ -17,9 +17,10 @@ func _on_body_entered(body):
 	explota()
 	
 
-func _on_space_missiles_013_animation_finished():
-	queue_free()
-
 func explota():
 	viu = false
 	$AnimatedSprite2D.play("Final")
+
+
+func _on_animated_sprite_2d_animation_finished():
+	queue_free()

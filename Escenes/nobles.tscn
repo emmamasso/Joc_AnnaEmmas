@@ -17,3 +17,6 @@ polygon = PackedVector2Array(-62, -102, -58, -99, -58, -64.5, -55.9, -61, -53.9,
 [node name="SpaceShips002" type="Sprite2D" parent="."]
 position = Vector2(169, 177)
 texture = ExtResource("2_i40b5")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerDisparar" to="." method="_on_timer_disparar_timeout"]
