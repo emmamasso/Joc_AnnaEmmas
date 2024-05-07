@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://6aki7ppq6rjj"]
+
+[ext_resource type="Texture2D" uid="uid://dnhcf2ff1t46x" path="res://Imatges/Enemics/spaceMissiles_007.png" id="1_oldj0"]
+
+[node name="bales_rei" type="AnimatedSprite2D"]
+
+[node name="SpaceMissiles007" type="Sprite2D" parent="."]
+scale = Vector2(0.605264, 0.5625)
+texture = ExtResource("1_oldj0")
+flip_v = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.605264, 0.5625)
+polygon = PackedVector2Array(7, 38.5, 7, 35.5, 15, 20.5, 15, -14.2, 19, -18.2, 19, -33.1, 17.1, -41, 1.9, -41, 0.6, -37, -0.6, -37, -1.9, -41, -17.4, -41, -19, -38.6, -19, -33.3, -19, -19, -15, -15.2, -15, 21, -13.5, 21, -10.6, 33, -8.9, 33, -4, 38.7, 5.3, 39)
