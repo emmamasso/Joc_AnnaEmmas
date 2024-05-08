@@ -13,6 +13,9 @@ func _process(delta):
 		get_tree().paused=true
 
 func _on_surt_pressed():
+	Vides.Vida=3
+	Vides.nombrepeo=0
+	Vides.bales=10
 	get_tree().quit()
 
 func _on_continua_pressed():
@@ -21,10 +24,16 @@ func _on_continua_pressed():
 
 
 func _on_pantalla_dinici_pressed():
+	Vides.Vida=3
+	Vides.nombrepeo=0
+	Vides.bales=10
 	get_tree().paused=false
 	get_tree().change_scene_to_packed(pantallainici)
 
 
 func _on_partidanova_pressed():
+	Vides.Vida=3
+	Vides.nombrepeo=0
+	Vides.bales=10
 	get_tree().paused=false
 	get_tree().change_scene_to_packed(escenaprinicpal)
