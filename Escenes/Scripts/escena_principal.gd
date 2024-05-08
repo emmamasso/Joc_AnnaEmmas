@@ -21,13 +21,12 @@ func _ready():
 	$TimerPowerUpMunicio.start()
 	$TimerPowerUpVides.wait_time=randf_range(15,25)
 	$TimerPowerUpVides.start()
-	$MeteoritNou.wait_time=randf_range(50,70)
+	$MeteoritNou.wait_time=randf_range(50,60)
 	$MeteoritNou.start()
 	$musica.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	
 	if Vides.Vida==0:
 		Vides.Vida=3
 		get_tree().change_scene_to_packed(game_over)

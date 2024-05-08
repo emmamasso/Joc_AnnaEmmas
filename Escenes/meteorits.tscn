@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://btktudwx0kmcr" path="res://Escenes/Meteorits/meteorit_1.tscn" id="1_m7pfq"]
 [ext_resource type="PackedScene" uid="uid://ddrxdbss41gac" path="res://Escenes/Meteorits/meteorit_2.tscn" id="2_3fayy"]
 [ext_resource type="PackedScene" uid="uid://cljbmmrjo8j5l" path="res://Escenes/Meteorits/meteorit_3.tscn" id="3_vrakv"]
-[ext_resource type="PackedScene" uid="uid://dph8n8imfkvrc" path="res://Escenes/meteorits/meteorit_4.tscn" id="4_xni0a"]
+[ext_resource type="PackedScene" uid="uid://dph8n8imfkvrc" path="res://Escenes/Meteorits/meteorit_4.tscn" id="4_xni0a"]
 
 [node name="meteorits" type="Node2D"]
 
