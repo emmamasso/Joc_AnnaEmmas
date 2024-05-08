@@ -76,5 +76,5 @@ func _on_meteorit_nou_timeout():
 	else:
 		var nou_meteorit = meteorit4.instantiate()
 		add_child(nou_meteorit)
-	$MeteoritNou.wait_time=randf_range(30,40)
+	$MeteoritNou.wait_time=randf_range(50,70)
 	$MeteoritNou.start()
