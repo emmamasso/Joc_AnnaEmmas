@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 100.0
+const SPEED = 15.0
 @export var escena_bales :PackedScene
 
 func _physics_process(delta):
