@@ -22,3 +22,4 @@ func dispara():
 
 func _on_timer_timeout():
 	dispara()
+	
