@@ -9,8 +9,8 @@ var parells=0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Meteorit1.position.x=-100
-	$Meteorit2.position.x=-100
-	$Meteorit3.position.x=870
+	$Meteorit2.position.x=-220
+	$Meteorit3.position.x=1000
 	$meteorit4.position.x=870
 	position.y=-30
 	
