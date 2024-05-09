@@ -20,3 +20,7 @@ position = Vector2(105, 706)
 
 [node name="meteorit4" parent="." instance=ExtResource("4_xni0a")]
 position = Vector2(685, 711)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

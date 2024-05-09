@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dr5227qfqowue" path="res://Escenes/escena_peons.tscn" id="1_1t4f8"]
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
-[ext_resource type="PackedScene" path="res://Escenes/fons.tscn" id="2_v5ttc"]
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
 [ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="3_m5fb0"]
 [ext_resource type="PackedScene" uid="uid://c2npjp6am2n2f" path="res://Escenes/avió.tscn" id="6_1umba"]
 [ext_resource type="PackedScene" uid="uid://cxeheqq8gpe2s" path="res://Escenes/meteorits.tscn" id="8_2wtqg"]
@@ -45,7 +45,7 @@ unique_name_in_owner = true
 script = ExtResource("8_pxvxx")
 
 [node name="meteorits" parent="." instance=ExtResource("8_2wtqg")]
-position = Vector2(-12, -148)
+position = Vector2(-12, -18)
 
 [node name="BarraDeMunicio" parent="." instance=ExtResource("9_vv65v")]
 offset_left = 125.0
@@ -74,7 +74,7 @@ stream = ExtResource("14_j23b8")
 volume_db = -15.928
 
 [node name="BarraLimitEnemics" parent="." instance=ExtResource("15_shns7")]
-position = Vector2(-3, 766)
+position = Vector2(-3, 753)
 
 [node name="MeteoritNou" type="Timer" parent="."]
 
