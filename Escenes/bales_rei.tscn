@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6aki7ppq6rjj"]
 
-[ext_resource type="Script" path="res://Escenes/bales_rei.gd" id="1_bt2vh"]
+[ext_resource type="Script" path="res://Escenes/Scripts/bales_rei.gd" id="1_bt2vh"]
 [ext_resource type="Texture2D" uid="uid://dnhcf2ff1t46x" path="res://Imatges/Enemics/spaceMissiles_007.png" id="1_oldj0"]
 
 [node name="bales_rei" type="Area2D"]
