@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://giw5ieqvwem2"]
 
-[ext_resource type="Script" path="res://rei.gd" id="1_bafw5"]
+[ext_resource type="Script" path="res://Escenes/Scripts/rei.gd" id="1_bafw5"]
 [ext_resource type="Texture2D" uid="uid://ddjswwl8a28g" path="res://Imatges/Enemics/REI.png" id="2_fki3x"]
 [ext_resource type="PackedScene" uid="uid://6aki7ppq6rjj" path="res://Escenes/bales_rei.tscn" id="3_2txss"]
 
