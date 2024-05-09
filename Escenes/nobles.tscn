@@ -5,6 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://bxok87yohwqo" path="res://Música i Efectes de So/So/sfx_zap.ogg" id="3_he57p"]
 
 [node name="Nobles" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 8
 script = ExtResource("1_ltm4e")
 
 [node name="Timer" type="Timer" parent="."]

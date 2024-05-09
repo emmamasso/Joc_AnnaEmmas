@@ -24,7 +24,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Final",
-"speed": 2.0
+"speed": 45.0
 }, {
 "frames": [{
 "duration": 1.0,

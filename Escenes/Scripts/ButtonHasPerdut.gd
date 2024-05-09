@@ -15,4 +15,5 @@ func _on_pressed():
 	Vides.bales=10
 	Vides.Vida=3
 	Vides.nombrepeo=0
+	Vides.nombrenobles=0
 	get_tree().change_scene_to_packed(pantalla_inici)
