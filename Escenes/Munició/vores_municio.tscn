@@ -85,44 +85,49 @@ offset_bottom = 91.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio12" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 99.0
 offset_right = 20.0
 offset_bottom = 100.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio13" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 108.0
 offset_right = 20.0
 offset_bottom = 109.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio14" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 117.0
 offset_right = 20.0
 offset_bottom = 118.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio15" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 126.0
 offset_right = 20.0
 offset_bottom = 127.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio16" type="ColorRect" parent="."]
-offset_top = 134.0
+layout_mode = 0
+offset_top = 135.0
 offset_right = 20.0
-offset_bottom = 135.0
+offset_bottom = 136.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="MargeEsquerra" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = -1.0
-offset_bottom = 135.0
+offset_bottom = 136.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="MargeDret" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 20.0
 offset_right = 21.0
-offset_bottom = 135.0
+offset_bottom = 136.0
 color = Color(0.105882, 0.113725, 0.12549, 1)

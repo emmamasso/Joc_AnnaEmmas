@@ -48,9 +48,9 @@ script = ExtResource("8_pxvxx")
 position = Vector2(-12, -18)
 
 [node name="BarraDeMunicio" parent="." instance=ExtResource("9_vv65v")]
-offset_left = 125.0
+offset_left = 187.0
 offset_top = 961.0
-offset_right = 149.0
+offset_right = 211.0
 offset_bottom = 1054.0
 rotation = 1.5708
 

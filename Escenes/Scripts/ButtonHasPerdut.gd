@@ -13,7 +13,7 @@ func _process(delta):
 
 
 func _on_pressed():
-	Vides.bales=10
+	Vides.bales=15
 	Vides.Vida=3
 	Vides.nombrepeo=0
 	Vides.nombrenobles=0
@@ -21,7 +21,7 @@ func _on_pressed():
 
 
 func _on_tryagain_pressed():
-	Vides.bales=10
+	Vides.bales=15
 	Vides.Vida=3
 	Vides.nombrepeo=0
 	Vides.nombrenobles=0
