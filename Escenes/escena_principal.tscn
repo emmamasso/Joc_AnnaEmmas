@@ -1,0 +1,85 @@
+[gd_scene load_steps=14 format=3 uid="uid://xxc8efvd6f8w"]
+
+[ext_resource type="PackedScene" uid="uid://dr5227qfqowue" path="res://Escenes/escena_peons.tscn" id="1_1t4f8"]
+[ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
+[ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="3_m5fb0"]
+[ext_resource type="PackedScene" uid="uid://c2npjp6am2n2f" path="res://Escenes/avió.tscn" id="6_1umba"]
+[ext_resource type="PackedScene" uid="uid://cxeheqq8gpe2s" path="res://Escenes/meteorits.tscn" id="8_2wtqg"]
+[ext_resource type="PackedScene" uid="uid://qfkloehchk32" path="res://Escenes/vides.tscn" id="8_7lkdb"]
+[ext_resource type="Script" path="res://Escenes/Scripts/Balespeons.gd" id="8_pxvxx"]
+[ext_resource type="PackedScene" uid="uid://myeljv2fkc50" path="res://Escenes/Munició/barra_de_municio.tscn" id="9_vv65v"]
+[ext_resource type="Script" path="res://Escenes/Scripts/Balanobles.gd" id="12_ak2gg"]
+[ext_resource type="PackedScene" uid="uid://cb6jbbojwg1b8" path="res://Escenes/menu.tscn" id="13_vh3il"]
+[ext_resource type="AudioStream" uid="uid://bwf7swki6xo7v" path="res://Música i Efectes de So/Música/retro-wave-melodie-128-bpm-8970.mp3" id="14_j23b8"]
+[ext_resource type="PackedScene" uid="uid://ef42jtqfprct" path="res://Escenes/barra_limit_enemics.tscn" id="15_shns7"]
+
+[node name="Escena Principal" type="Node2D"]
+script = ExtResource("1_4p658")
+
+[node name="Fons" parent="." instance=ExtResource("2_v5ttc")]
+
+[node name="Marges de pantalla" parent="." instance=ExtResource("3_m5fb0")]
+
+[node name="Temps" type="Timer" parent="."]
+wait_time = 1.25
+
+[node name="Peons" type="Node2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(0.85, 0.85)
+
+[node name="Escena Peons" parent="Peons" instance=ExtResource("1_1t4f8")]
+position = Vector2(41, 35)
+
+[node name="Lasers" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Avió" parent="." instance=ExtResource("6_1umba")]
+position = Vector2(419, 875)
+
+[node name="Vides" parent="." instance=ExtResource("8_7lkdb")]
+position = Vector2(793, 976)
+
+[node name="Balespeons" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("8_pxvxx")
+
+[node name="meteorits" parent="." instance=ExtResource("8_2wtqg")]
+position = Vector2(-12, -18)
+
+[node name="BarraDeMunicio" parent="." instance=ExtResource("9_vv65v")]
+offset_left = 187.0
+offset_top = 961.0
+offset_right = 211.0
+offset_bottom = 1054.0
+rotation = 1.5708
+
+[node name="TimerPowerUpMunicio" type="Timer" parent="."]
+
+[node name="TimerPowerUpVides" type="Timer" parent="."]
+
+[node name="Nobles" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(-13, -22)
+scale = Vector2(0.4, 0.4)
+
+[node name="Balesnobles" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("12_ak2gg")
+
+[node name="Menu" parent="." instance=ExtResource("13_vh3il")]
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_j23b8")
+volume_db = -15.928
+
+[node name="BarraLimitEnemics" parent="." instance=ExtResource("15_shns7")]
+position = Vector2(-3, 753)
+
+[node name="MeteoritNou" type="Timer" parent="."]
+
+[connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
+[connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
+[connection signal="finished" from="musica" to="." method="_on_musica_finished"]
+[connection signal="timeout" from="MeteoritNou" to="." method="_on_meteorit_nou_timeout"]
