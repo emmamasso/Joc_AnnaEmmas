@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dr5227qfqowue" path="res://Escenes/escena_peons.tscn" id="1_1t4f8"]
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
-[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
+[ext_resource type="PackedScene" path="res://Escenes/fons.tscn" id="2_v5ttc"]
 [ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="3_m5fb0"]
 [ext_resource type="PackedScene" uid="uid://c2npjp6am2n2f" path="res://Escenes/avió.tscn" id="6_1umba"]
 [ext_resource type="PackedScene" uid="uid://cxeheqq8gpe2s" path="res://Escenes/meteorits.tscn" id="8_2wtqg"]
@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://Escenes/Scripts/Balespeons.gd" id="8_pxvxx"]
 [ext_resource type="PackedScene" uid="uid://myeljv2fkc50" path="res://Escenes/Munició/barra_de_municio.tscn" id="9_vv65v"]
 [ext_resource type="PackedScene" uid="uid://btld4uamm4t8n" path="res://Escenes/nobles.tscn" id="10_2vrrt"]
-[ext_resource type="PackedScene" path="res://Escenes/bales_nobles.tscn" id="11_jcuyv"]
+[ext_resource type="PackedScene" uid="uid://banwb4fx4kkvn" path="res://Escenes/bales_nobles.tscn" id="11_jcuyv"]
 [ext_resource type="Script" path="res://Escenes/Scripts/Balanobles.gd" id="12_ak2gg"]
 [ext_resource type="PackedScene" uid="uid://cb6jbbojwg1b8" path="res://Escenes/menu.tscn" id="13_vh3il"]
 [ext_resource type="AudioStream" uid="uid://bwf7swki6xo7v" path="res://Música i Efectes de So/Música/retro-wave-melodie-128-bpm-8970.mp3" id="14_j23b8"]
