@@ -8,7 +8,7 @@ var powerupmunicio:PackedScene = load("res://Escenes/power_up_municio.tscn")
 var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
 var EscenaNobles: PackedScene = load("res://Escenes/nobles.tscn")
 var posicio_inicial_noble = Vector2( -13, -22)
-var meteorits:PackedScene = load("res://Escenes/Meteorits/meteorits.tscn")
+var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -38,7 +38,7 @@ func _on_timer_timeout():
 		Vides.nombrepeo += 1
 	if Vides.nombrenobles<10 and Vides.nombrepeo>=20:
 		var nou_noble = EscenaNobles.instantiate()
-		$Temps.start()
+		$Temps.start() 
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
 		Vides.nombrenobles += 1
