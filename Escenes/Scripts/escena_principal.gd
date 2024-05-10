@@ -14,7 +14,6 @@ var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Temps.start()
-	$Temps.wait_time=randf_range(10,15)
 	Vides.Vida=3
 	$TimerPowerUpMunicio.wait_time=randf_range(10,15)
 	$TimerPowerUpMunicio.start()
@@ -33,14 +32,12 @@ func _process(delta):
 func _on_timer_timeout():
 	if Vides.nombrepeo<20:
 		nou_peo = EscenaPeons.instantiate()
-		$Temps.wait_time=randf_range(3,10)
 		$Temps.start()
 		nou_peo.position = posicio_inicial_peo
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeo += 1
 	elif Vides.nombrenobles<10 and Vides.nombrepeo>=20:
 		var nou_noble = EscenaNobles.instantiate()
-		$Temps.wait_time=randf_range(3,15)
 		$Temps.start() 
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
