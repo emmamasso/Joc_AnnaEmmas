@@ -68,9 +68,7 @@ func _on_musica_finished():
 func _on_meteorit_nou_timeout():
 	$meteorits.desapareixen()
 	var nou_meteorit= meteorits.instantiate()
-	$meteorits.add_child(nou_meteorit)
-	$MeteoritNou.wait_time=randf_range(50,70)
-	$MeteoritNou.start()
+	add_child(nou_meteorit)
 
 
 func _on_inicijoc_timeout():

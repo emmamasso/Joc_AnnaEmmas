@@ -1,4 +1,5 @@
 extends Control
+var escenaprinicpal:PackedScene = load("res://Escenes/escena_principal.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
