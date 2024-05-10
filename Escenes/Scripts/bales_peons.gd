@@ -13,6 +13,7 @@ func _process(delta):
 		position.y += velocitat_maxima*delta
 
 func _on_body_entered(body):
+	velocitat_maxima = 0
 	body.explota()
 	explota()
 	
