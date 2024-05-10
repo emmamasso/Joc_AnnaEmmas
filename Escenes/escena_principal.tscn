@@ -79,7 +79,7 @@ position = Vector2(-3, 753)
 wait_time = 10.0
 
 [node name="rei" parent="." instance=ExtResource("13_5d3mg")]
-position = Vector2(415, -112)
+position = Vector2(415, -107)
 
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
