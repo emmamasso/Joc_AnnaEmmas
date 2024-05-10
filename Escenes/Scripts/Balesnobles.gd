@@ -25,3 +25,8 @@ func explota():
 
 func _on_animated_sprite_2d_animation_finished():
 	queue_free()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
+	print("desapareix")
