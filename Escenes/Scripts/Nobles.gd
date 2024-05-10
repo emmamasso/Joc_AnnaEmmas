@@ -30,7 +30,7 @@ func explota():
 func disparar_bala():
 	var nova_bala = bala.instantiate()
 	Vides.Balesnobles.add_child(nova_bala)
-	nova_bala.global_position = global_position
+	nova_bala.global_position = self.global_position
 	$SorollBala.play()
 
 
