@@ -1,8 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://xxc8efvd6f8w"]
+[gd_scene load_steps=13 format=3 uid="uid://xxc8efvd6f8w"]
 
-[ext_resource type="PackedScene" uid="uid://dr5227qfqowue" path="res://Escenes/escena_peons.tscn" id="1_1t4f8"]
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
-[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
+[ext_resource type="PackedScene" path="res://Escenes/fons.tscn" id="2_v5ttc"]
 [ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="3_m5fb0"]
 [ext_resource type="PackedScene" uid="uid://c2npjp6am2n2f" path="res://Escenes/avió.tscn" id="6_1umba"]
 [ext_resource type="PackedScene" uid="uid://cxeheqq8gpe2s" path="res://Escenes/meteorits.tscn" id="8_2wtqg"]
@@ -27,9 +26,6 @@ wait_time = 1.25
 [node name="Peons" type="Node2D" parent="."]
 unique_name_in_owner = true
 scale = Vector2(0.85, 0.85)
-
-[node name="Escena Peons" parent="Peons" instance=ExtResource("1_1t4f8")]
-position = Vector2(41, 35)
 
 [node name="Lasers" type="Node2D" parent="."]
 unique_name_in_owner = true
@@ -78,8 +74,12 @@ position = Vector2(-3, 753)
 
 [node name="MeteoritNou" type="Timer" parent="."]
 
+[node name="Inicijoc" type="Timer" parent="."]
+wait_time = 10.0
+
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
 [connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
 [connection signal="finished" from="musica" to="." method="_on_musica_finished"]
 [connection signal="timeout" from="MeteoritNou" to="." method="_on_meteorit_nou_timeout"]
+[connection signal="timeout" from="Inicijoc" to="." method="_on_inicijoc_timeout"]
