@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 @export var escena_bales :PackedScene
-
+var vida_rei = 5
 func _physics_process(delta):
 	velocity.y = SPEED 
 	$Timer.start()
@@ -18,8 +18,6 @@ func dispara():
 		nova_bala.global_position = global_position
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
-
-
 func _on_timer_timeout():
 	dispara()
 	
