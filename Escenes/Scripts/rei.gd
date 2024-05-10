@@ -6,7 +6,9 @@ func _ready():
 	visible = false
 	SPEED = 0
 func _physics_process(delta):
-	pass
+	velocity.y = SPEED 
+	move_and_slide()
+	
 var nova_bala
 func dispara():
 	var n_bales = 10
@@ -26,6 +28,4 @@ func _on_timer_timeout():
 
 func _on_tempsentrada_timeout():
 	SPEED = 15
-	velocity.y = SPEED 
 	$Timer.start()
-	move_and_slide()
