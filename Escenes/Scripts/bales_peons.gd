@@ -24,3 +24,8 @@ func _on_space_missiles_013_animation_finished():
 func explota():
 	viu = false
 	$SpaceMissiles013.play("Final")
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
+	

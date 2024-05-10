@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
-var SPEED = 15.0
+var SPEED = 15
 @export var escena_bales :PackedScene
 func _ready():
-	visible = false
 	SPEED = 0
+	$Timer.wait_time=300
+	$Timer.start()
+	
 func _physics_process(delta):
 	velocity.y = SPEED 
 	move_and_slide()
@@ -28,4 +30,5 @@ func _on_timer_timeout():
 
 func _on_tempsentrada_timeout():
 	SPEED = 15
-	$Timer.start()
+	$Tempsentrada.stop()
+	print("entarda")

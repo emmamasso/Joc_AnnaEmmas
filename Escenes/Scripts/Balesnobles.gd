@@ -13,9 +13,10 @@ func _process(delta):
 		position.y += velocitat_maxima*delta
 
 func _on_body_entered(body):
-	body.explota()
-	velocitat_maxima = 0
-	explota()
+	print("ha explotat")
+	#body.explota()
+	#velocitat_maxima = 0
+	#explota()
 	
 
 func explota():
@@ -29,4 +30,3 @@ func _on_animated_sprite_2d_animation_finished():
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
-	print("desapareix")

@@ -1,9 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://bnsm0b4lpdb21"]
+[gd_scene load_steps=7 format=3 uid="uid://bnsm0b4lpdb21"]
 
 [ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_8kybh"]
 [ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_kqtyw"]
 [ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_vr1dp"]
 [ext_resource type="Texture2D" uid="uid://dkm8ur5e82p3y" path="res://Imatges/Bales/laserGreen03.png" id="4_47vln"]
+
+[sub_resource type="GDScript" id="GDScript_1pmvo"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
+	print(\"deapareixo\")
+"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qb37e"]
 animations = [{
@@ -27,6 +46,7 @@ animations = [{
 
 [node name="escena_laser" type="Area2D"]
 collision_mask = 16
+script = SubResource("GDScript_1pmvo")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 2)
