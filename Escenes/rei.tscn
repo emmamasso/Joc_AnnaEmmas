@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://6aki7ppq6rjj" path="res://Escenes/bales_rei.tscn" id="3_2txss"]
 
 [node name="rei" type="CharacterBody2D"]
+collision_layer = 128
+collision_mask = 4
 script = ExtResource("1_bafw5")
 escena_bales = ExtResource("3_2txss")
 

@@ -10,11 +10,7 @@ func _ready():
 func _physics_process(delta):
 	velocity.y = SPEED 
 	move_and_slide()
-	if position.y == 300:
-		print("done")
-		$Timer.wait_time=20
-		$Timer.start
-	
+
 var nova_bala
 
 func dispara():
@@ -38,5 +34,7 @@ func _on_timer_timeout():
 
 
 func _on_tempsentrada_timeout():
-	SPEED = 8
+	SPEED = 6
 	$Tempsentrada.stop()
+	$Timer.wait_time=20
+	$Timer.start
