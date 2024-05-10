@@ -42,7 +42,7 @@ unique_name_in_owner = true
 script = ExtResource("8_pxvxx")
 
 [node name="meteorits" parent="." instance=ExtResource("8_2wtqg")]
-position = Vector2(-12, -18)
+position = Vector2(-12, -31)
 
 [node name="BarraDeMunicio" parent="." instance=ExtResource("9_vv65v")]
 offset_left = 187.0
