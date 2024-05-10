@@ -51,6 +51,9 @@ func _on_timer_timeout():
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
 		Vides.nombrenobles += 1
+	elif Vides.nombrenobles == 10:
+		$rei/Tempsentrada.start()
+		Vides.nombrenobles += 1 
 
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()
