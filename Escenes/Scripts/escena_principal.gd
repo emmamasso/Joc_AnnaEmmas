@@ -37,9 +37,10 @@ func _on_timer_timeout():
 		nou_peo.position = posicio_inicial_peo
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeo += 1
-	if Vides.nombrepeo==20:
+	elif Vides.nombrepeo==20:
 		$Temps.wait_time = 0.5
 		$Temps.start()
+		Vides.nombrepeo += 1
 	elif Vides.nombrenobles<10 and Vides.nombrepeo>20:
 		var nou_noble = EscenaNobles.instantiate()
 		$Temps.wait_time = 1.25
