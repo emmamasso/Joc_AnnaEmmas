@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 const SPEED = 15.0
 @export var escena_bales :PackedScene
-
+func _ready():
+	visible = false
 func _physics_process(delta):
 	velocity.y = SPEED 
 	$Timer.start()
