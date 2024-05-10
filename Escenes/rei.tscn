@@ -18,7 +18,6 @@ texture = ExtResource("2_fki3x")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 10.0
-autostart = true
 
 [node name="Tempsentrada" type="Timer" parent="."]
 wait_time = 0.5
