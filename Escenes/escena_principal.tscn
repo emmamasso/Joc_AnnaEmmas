@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://xxc8efvd6f8w"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
-[ext_resource type="PackedScene" path="res://Escenes/fons.tscn" id="2_v5ttc"]
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
 [ext_resource type="PackedScene" uid="uid://ddotqqy0qpkhi" path="res://Escenes/marges_de_pantalla.tscn" id="3_m5fb0"]
 [ext_resource type="PackedScene" uid="uid://c2npjp6am2n2f" path="res://Escenes/avió.tscn" id="6_1umba"]
 [ext_resource type="PackedScene" uid="uid://cxeheqq8gpe2s" path="res://Escenes/meteorits.tscn" id="8_2wtqg"]

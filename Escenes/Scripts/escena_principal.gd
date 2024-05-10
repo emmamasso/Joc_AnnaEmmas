@@ -20,7 +20,7 @@ func _ready():
 	$TimerPowerUpMunicio.start()
 	$TimerPowerUpVides.wait_time=randf_range(15,25)
 	$TimerPowerUpVides.start()
-	$MeteoritNou.wait_time=randf_range(50,60)
+	$MeteoritNou.wait_time=randf_range(70,80)
 	$MeteoritNou.start()
 	$musica.play()
 
@@ -70,7 +70,7 @@ func _on_meteorit_nou_timeout():
 	$meteorits.desapareixen()
 	var nou_meteorit= meteorits.instantiate()
 	add_child(nou_meteorit)
-
+	$MeteoritNou.stop()
 
 func _on_inicijoc_timeout():
 	$Temps.start()
