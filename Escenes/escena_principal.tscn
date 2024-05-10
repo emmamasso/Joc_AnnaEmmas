@@ -78,8 +78,11 @@ position = Vector2(-3, 753)
 
 [node name="MeteoritNou" type="Timer" parent="."]
 
+[node name="Inicijoc" type="Timer" parent="."]
+
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
 [connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
 [connection signal="finished" from="musica" to="." method="_on_musica_finished"]
 [connection signal="timeout" from="MeteoritNou" to="." method="_on_meteorit_nou_timeout"]
+[connection signal="timeout" from="Inicijoc" to="." method="_on_inicijoc_timeout"]
