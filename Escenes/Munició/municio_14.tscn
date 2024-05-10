@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://rnbhpavsp1o"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/Municions/municio14.gd" id="1_fynvf"]
+
+[node name="municio14" type="ColorRect"]
+offset_right = 20.0
+offset_bottom = 8.0
+color = Color(0, 1, 0, 1)
+script = ExtResource("1_fynvf")

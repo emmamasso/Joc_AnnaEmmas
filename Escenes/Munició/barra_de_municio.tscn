@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://myeljv2fkc50"]
+[gd_scene load_steps=18 format=3 uid="uid://myeljv2fkc50"]
 
 [ext_resource type="PackedScene" uid="uid://20lv66emef11" path="res://Escenes/Munició/vores_municio.tscn" id="1_hw7wj"]
 [ext_resource type="PackedScene" uid="uid://dtnawilj8jw2t" path="res://Escenes/Munició/municio0.tscn" id="2_3jmef"]
@@ -11,12 +11,17 @@
 [ext_resource type="PackedScene" uid="uid://d0pfmxc3iw0y3" path="res://Escenes/Munició/municio_7.tscn" id="9_3ws27"]
 [ext_resource type="PackedScene" uid="uid://bbodxgu0jsqrq" path="res://Escenes/Munició/municio_8.tscn" id="10_p5ssn"]
 [ext_resource type="PackedScene" uid="uid://7qgls0nd4a8x" path="res://Escenes/Munició/municio_9.tscn" id="11_q5ydt"]
+[ext_resource type="PackedScene" uid="uid://c46f31qkwirsb" path="res://Escenes/Munició/municio_10.tscn" id="12_daskr"]
 [ext_resource type="Texture2D" uid="uid://csiu3m8p6r441" path="res://Imatges/PowerUps/shield_silver.png" id="12_s3e4b"]
+[ext_resource type="PackedScene" uid="uid://b32ydqpvxynrx" path="res://Escenes/Munició/municio_11.tscn" id="13_p4bxk"]
+[ext_resource type="PackedScene" uid="uid://dpe5f37qhpywu" path="res://Escenes/Munició/municiio_12.tscn" id="14_iienm"]
+[ext_resource type="PackedScene" uid="uid://k0j57syikts1" path="res://Escenes/Munició/municio_13.tscn" id="15_jqfh6"]
+[ext_resource type="PackedScene" uid="uid://rnbhpavsp1o" path="res://Escenes/Munició/municio_14.tscn" id="17_j4v7c"]
 
 [node name="BarraDeMunicio" type="ColorRect"]
 offset_top = -24.0
 offset_right = 24.0
-offset_bottom = 93.0
+offset_bottom = 138.0
 color = Color(0.282353, 0.294118, 0.32549, 1)
 
 [node name="VoresMunicio" parent="." instance=ExtResource("1_hw7wj")]
@@ -26,72 +31,99 @@ offset_bottom = 65.0
 [node name="municio0" parent="." instance=ExtResource("2_3jmef")]
 layout_mode = 0
 offset_left = 2.0
+offset_top = 152.0
+offset_right = 22.0
+offset_bottom = 160.0
+
+[node name="municio1" parent="." instance=ExtResource("3_mjl76")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 143.0
+offset_right = 22.0
+offset_bottom = 151.0
+
+[node name="municio2" parent="." instance=ExtResource("4_c0slc")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 134.0
+offset_right = 22.0
+offset_bottom = 142.0
+
+[node name="municio3" parent="." instance=ExtResource("5_qf05k")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 125.0
+offset_right = 22.0
+offset_bottom = 133.0
+
+[node name="municio4" parent="." instance=ExtResource("6_4wpuh")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 116.0
+offset_right = 22.0
+offset_bottom = 124.0
+
+[node name="municio5" parent="." instance=ExtResource("7_3p4kh")]
+layout_mode = 0
+offset_left = 2.0
 offset_top = 107.0
 offset_right = 22.0
 offset_bottom = 115.0
 
-[node name="municio1" parent="." instance=ExtResource("3_mjl76")]
+[node name="Municio6" parent="." instance=ExtResource("8_nkyaw")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 98.0
 offset_right = 22.0
 offset_bottom = 106.0
 
-[node name="municio2" parent="." instance=ExtResource("4_c0slc")]
+[node name="municio7" parent="." instance=ExtResource("9_3ws27")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 89.0
 offset_right = 22.0
 offset_bottom = 97.0
 
-[node name="municio3" parent="." instance=ExtResource("5_qf05k")]
+[node name="municio8" parent="." instance=ExtResource("10_p5ssn")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 80.0
 offset_right = 22.0
 offset_bottom = 88.0
 
-[node name="municio4" parent="." instance=ExtResource("6_4wpuh")]
+[node name="municio9" parent="." instance=ExtResource("11_q5ydt")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 71.0
 offset_right = 22.0
 offset_bottom = 79.0
 
-[node name="municio5" parent="." instance=ExtResource("7_3p4kh")]
+[node name="municio10" parent="." instance=ExtResource("12_daskr")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 62.0
 offset_right = 22.0
 offset_bottom = 70.0
 
-[node name="Municio6" parent="." instance=ExtResource("8_nkyaw")]
+[node name="municio11" parent="." instance=ExtResource("13_p4bxk")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 53.0
 offset_right = 22.0
 offset_bottom = 61.0
 
-[node name="municio7" parent="." instance=ExtResource("9_3ws27")]
-layout_mode = 0
+[node name="municiio12" parent="." instance=ExtResource("14_iienm")]
 offset_left = 2.0
 offset_top = 44.0
 offset_right = 22.0
 offset_bottom = 52.0
 
-[node name="municio8" parent="." instance=ExtResource("10_p5ssn")]
+[node name="municio13" parent="." instance=ExtResource("15_jqfh6")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 35.0
 offset_right = 22.0
 offset_bottom = 43.0
-
-[node name="municio9" parent="." instance=ExtResource("11_q5ydt")]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 26.0
-offset_right = 22.0
-offset_bottom = 34.0
 
 [node name="ShieldSilver" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -99,3 +131,10 @@ position = Vector2(12, 12)
 rotation = -1.5708
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("12_s3e4b")
+
+[node name="municio14" parent="." instance=ExtResource("17_j4v7c")]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 26.0
+offset_right = 22.0
+offset_bottom = 34.0

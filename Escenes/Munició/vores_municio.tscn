@@ -43,50 +43,91 @@ offset_bottom = 37.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio6" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 45.0
 offset_right = 20.0
 offset_bottom = 46.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio7" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 54.0
 offset_right = 20.0
 offset_bottom = 55.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio8" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 63.0
 offset_right = 20.0
 offset_bottom = 64.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio9" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 72.0
 offset_right = 20.0
 offset_bottom = 73.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio10" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 81.0
 offset_right = 20.0
 offset_bottom = 82.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="Vores1Municio11" type="ColorRect" parent="."]
+layout_mode = 0
 offset_top = 90.0
 offset_right = 20.0
 offset_bottom = 91.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
+[node name="Vores1Municio12" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 20.0
+offset_bottom = 100.0
+color = Color(0.105882, 0.113725, 0.12549, 1)
+
+[node name="Vores1Municio13" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 108.0
+offset_right = 20.0
+offset_bottom = 109.0
+color = Color(0.105882, 0.113725, 0.12549, 1)
+
+[node name="Vores1Municio14" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 117.0
+offset_right = 20.0
+offset_bottom = 118.0
+color = Color(0.105882, 0.113725, 0.12549, 1)
+
+[node name="Vores1Municio15" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 126.0
+offset_right = 20.0
+offset_bottom = 127.0
+color = Color(0.105882, 0.113725, 0.12549, 1)
+
+[node name="Vores1Municio16" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 135.0
+offset_right = 20.0
+offset_bottom = 136.0
+color = Color(0.105882, 0.113725, 0.12549, 1)
+
 [node name="MargeEsquerra" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = -1.0
-offset_bottom = 91.0
+offset_bottom = 136.0
 color = Color(0.105882, 0.113725, 0.12549, 1)
 
 [node name="MargeDret" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 20.0
 offset_right = 21.0
-offset_bottom = 91.0
+offset_bottom = 136.0
 color = Color(0.105882, 0.113725, 0.12549, 1)

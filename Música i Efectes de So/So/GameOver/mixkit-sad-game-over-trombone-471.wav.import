@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://by1wj8tk6krly"
+path="res://.godot/imported/mixkit-sad-game-over-trombone-471.wav-c4c345464dfa2435cb31c01c7b18f453.sample"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/GameOver/mixkit-sad-game-over-trombone-471.wav"
+dest_files=["res://.godot/imported/mixkit-sad-game-over-trombone-471.wav-c4c345464dfa2435cb31c01c7b18f453.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
