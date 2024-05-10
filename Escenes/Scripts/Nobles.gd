@@ -1,6 +1,7 @@
 extends CharacterBody2D
 var direccio:=Vector2 (1,0)
 var velocitat_màxima:=100
+var videsnoble=2
 var banda
 var bala:PackedScene = load("res://Escenes/bales_nobles.tscn")
 
@@ -10,6 +11,9 @@ func _ready():
 func _process(delta):
 	velocity= direccio.normalized()*velocitat_màxima
 	move_and_slide()
+	if videsnoble==0:
+		queue_free()
+
 func canvia_direcció_dreta():
 	direccio = Vector2(0,0.825)
 	banda = "dreta"
@@ -24,9 +28,11 @@ func _on_timer_timeout():
 		direccio = Vector2(1,0)
 	else:
 		direccio = Vector2(-1,0)
-func explota():
-	queue_free()
 
+func explota():
+	videsnoble+=-1
+	self.modulate = Color(0.3,0.3,0.3)
+	
 func disparar_bala():
 	var nova_bala = bala.instantiate()
 	Vides.Balesnobles.add_child(nova_bala)
