@@ -14,6 +14,7 @@ var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Inicijoc.start()
+	$Temps.wait_time = 0
 	Vides.Vida=3
 	$TimerPowerUpMunicio.wait_time=randf_range(10,15)
 	$TimerPowerUpMunicio.start()
@@ -70,3 +71,4 @@ func _on_meteorit_nou_timeout():
 
 func _on_inicijoc_timeout():
 	$Temps.start()
+	$Temps.wait_time = 1.25

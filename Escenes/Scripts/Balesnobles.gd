@@ -14,6 +14,7 @@ func _process(delta):
 
 func _on_body_entered(body):
 	body.explota()
+	velocitat_maxima = 0
 	explota()
 	
 
