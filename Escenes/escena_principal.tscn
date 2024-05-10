@@ -77,6 +77,9 @@ position = Vector2(-3, 753)
 [node name="Inicijoc" type="Timer" parent="."]
 wait_time = 10.0
 
+[node name="Rei" type="Node2D" parent="."]
+unique_name_in_owner = true
+
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
 [connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
