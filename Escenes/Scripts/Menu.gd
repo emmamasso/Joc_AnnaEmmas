@@ -11,6 +11,9 @@ func _process(delta):
 	if Input.is_action_just_pressed("escape"):
 		visible=true
 		get_tree().paused=true
+	if Input.is_action_just_pressed("enter"):
+		visible=false
+		get_tree().paused=false
 
 func _on_surt_pressed():
 	Vides.Vida=3
