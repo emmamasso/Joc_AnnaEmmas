@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddotqqy0qpkhi"]
+[gd_scene load_steps=5 format=3 uid="uid://ddotqqy0qpkhi"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Area esquerra.gd" id="1_ory02"]
 [ext_resource type="Script" path="res://Escenes/Scripts/Area dreta.gd" id="2_dyvdy"]
@@ -8,9 +8,6 @@ size = Vector2(16, 1000)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_80jf2"]
 size = Vector2(28, 1008)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v4v2m"]
-size = Vector2(866, 20)
 
 [node name="Marges de pantalla" type="Node2D"]
 
@@ -33,15 +30,6 @@ script = ExtResource("2_dyvdy")
 light_mask = 4
 position = Vector2(865, 496)
 shape = SubResource("RectangleShape2D_80jf2")
-
-[node name="Area superior" type="Area2D" parent="."]
-collision_layer = 64
-collision_mask = 2
-
-[node name="Collision superior" type="CollisionShape2D" parent="Area superior"]
-light_mask = 2
-position = Vector2(423, -10)
-shape = SubResource("RectangleShape2D_v4v2m")
 
 [connection signal="body_entered" from="Area esquerra" to="Area esquerra" method="_on_body_entered"]
 [connection signal="body_shape_entered" from="Area esquerra" to="Area esquerra" method="_on_body_shape_entered"]
