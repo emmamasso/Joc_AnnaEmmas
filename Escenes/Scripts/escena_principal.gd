@@ -16,6 +16,9 @@ func _ready():
 	$Inicijoc.start()
 	$Temps.wait_time = 0
 	Vides.Vida=3
+	Vides.bales=15
+	Vides.nombrenobles=0
+	Vides.nombrepeo=0
 	$TimerPowerUpMunicio.wait_time=randf_range(10,15)
 	$TimerPowerUpMunicio.start()
 	$TimerPowerUpVides.wait_time=randf_range(15,25)
