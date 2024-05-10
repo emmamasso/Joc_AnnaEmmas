@@ -7,7 +7,7 @@ var posicio_inicial_peo = Vector2(41, 35)
 var powerupmunicio:PackedScene = load("res://Escenes/power_up_municio.tscn")
 var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
 var EscenaNobles: PackedScene = load("res://Escenes/nobles.tscn")
-var posicio_inicial_noble = Vector2( -13, -22)
+var posicio_inicial_noble = Vector2(170,175)
 var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
 
 
