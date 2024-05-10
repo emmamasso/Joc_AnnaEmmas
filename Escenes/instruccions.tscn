@@ -36,7 +36,7 @@ text = "[center]
 Aquest joc està inspirat en el clàssic \"space invaders\". 
 [/center]
 
-Com a jugador tindràs el control de la teva nau (fletxes del teclat) que és de color verd i el teu objectiu serà derrotar els enemics fent ús de la teva munició (per disparar prémer la tecla d'espai). Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'esuquivar les seves bales. Per sort,  hi ha  meteorits que podràs fer servir com a escut mentre durin. 
+Com a jugador tindràs el control (fletxes del teclat) de la teva nau que és de color verd i el teu objectiu serà derrotar els enemics fent ús de la teva munició (per disparar prémer la tecla d'espai). Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'esuquivar les seves bales. Per sort,  hi ha  meteorits que podràs fer servir com a escut mentre durin. 
 
 ATENCIÓ: 
 	· La munició és limitada i podras 

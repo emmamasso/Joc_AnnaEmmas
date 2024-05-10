@@ -49,5 +49,6 @@ func _on_timer_timeout():
 	$Timer.start()
 	if modulacions_dels_meteorits==10:
 		modulacions_dels_meteorits=0
-		queue_free()
+		for meteorit in get_children():
+			meteorit.queue_free()
 	
