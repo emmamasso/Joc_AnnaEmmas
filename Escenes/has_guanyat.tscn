@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://crwgsy7otd5i"]
+[gd_scene load_steps=8 format=3 uid="uid://crwgsy7otd5i"]
 
 [ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_2so8n"]
+[ext_resource type="Script" path="res://Escenes/Scripts/has_guanyat.gd" id="1_64bp2"]
 [ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_14rmh"]
 [ext_resource type="FontFile" uid="uid://d4gehdo2q0n13" path="res://Lletra/space age.ttf" id="2_nqtil"]
 [ext_resource type="Script" path="res://Escenes/Scripts/tryagain.gd" id="3_7m4fo"]
 [ext_resource type="Script" path="res://Escenes/Scripts/ButtonHasPerdut.gd" id="5_72dwf"]
+[ext_resource type="AudioStream" uid="uid://c8k0tc1n3obi5" path="res://Música i Efectes de So/So/You Win/triumph-83761.mp3" id="6_c47ox"]
 
 [node name="has_guanyat" type="Control"]
 layout_mode = 3
@@ -13,6 +15,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_64bp2")
 
 [node name="Fons" parent="." instance=ExtResource("1_2so8n")]
 
@@ -94,5 +97,8 @@ theme_override_fonts/font = ExtResource("2_14rmh")
 theme_override_font_sizes/font_size = 40
 text = "Torna a la pantalla d'inici"
 script = ExtResource("5_72dwf")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_c47ox")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

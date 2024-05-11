@@ -6,7 +6,7 @@ var vidarei = 20
 var x = 1
 func _ready():
 	SPEED = 0
-	$Timer.wait_time=775
+	$Timer.wait_time=900
 	$Timer.start()
 	vidarei = 20
 	$musica.play()
@@ -19,13 +19,15 @@ func _physics_process(delta):
 var nova_bala
 
 func dispara():
-	var n_bales = 10
-	var direccio = Vector2.RIGHT
+	var n_bales = 15
+	var direccio = Vector2.RIGHT 
+	var rotacio = -90
 	for i in range(n_bales):
 		nova_bala= escena_bales.instantiate()
 		Vides.Balespeons.add_child(nova_bala)
 		nova_bala.global_position = global_position
-		nova_bala.rotation=2*PI/n_bales
+		nova_bala.rotation_degrees=rotacio
+		rotacio+=24
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
 
