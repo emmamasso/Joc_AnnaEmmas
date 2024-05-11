@@ -31,7 +31,7 @@ func _on_timer_timeout():
 
 func explota():
 	videsnoble+=-1
-	self.modulate = Color(0.3,0.3,0.3)
+	self.modulate = Color(0.5,0.5,0.5)
 	
 func disparar_bala():
 	var nova_bala = bala.instantiate()
