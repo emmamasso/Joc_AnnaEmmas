@@ -1,5 +1,5 @@
 extends Node2D
-var Vida = 3
+var Vida = 5
 var Balespeons:Node2D
 var Balesnobles: Node2D
 var posicio_disparar1 = 40

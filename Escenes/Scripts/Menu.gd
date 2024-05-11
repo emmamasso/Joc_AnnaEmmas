@@ -16,7 +16,7 @@ func _process(delta):
 		get_tree().paused=false
 
 func _on_surt_pressed():
-	Vides.Vida=3
+	Vides.Vida=5
 	Vides.nombrepeo=0
 	Vides.bales=15
 	Vides.nombrenobles=0
@@ -28,7 +28,7 @@ func _on_continua_pressed():
 
 
 func _on_pantalla_dinici_pressed():
-	Vides.Vida=3
+	Vides.Vida=5
 	Vides.nombrepeo=0
 	Vides.bales=15
 	Vides.nombrenobles=0
@@ -37,7 +37,7 @@ func _on_pantalla_dinici_pressed():
 
 
 func _on_partidanova_pressed():
-	Vides.Vida=3
+	Vides.Vida=5
 	Vides.nombrepeo=0
 	Vides.bales=15
 	Vides.nombrenobles=0

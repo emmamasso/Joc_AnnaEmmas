@@ -35,7 +35,7 @@ unique_name_in_owner = true
 position = Vector2(419, 875)
 
 [node name="Vides" parent="." instance=ExtResource("8_7lkdb")]
-position = Vector2(793, 976)
+position = Vector2(743, 976)
 
 [node name="Balespeons" type="Node2D" parent="."]
 unique_name_in_owner = true

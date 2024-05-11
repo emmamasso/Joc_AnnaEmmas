@@ -15,7 +15,7 @@ var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
 func _ready():
 	$Inicijoc.start()
 	$Temps.wait_time = 0
-	Vides.Vida=3
+	Vides.Vida=5
 	Vides.bales=15
 	Vides.nombrenobles=0
 	Vides.nombrepeo=0
@@ -30,7 +30,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Vides.Vida==0:
-		Vides.Vida=3
+		Vides.Vida=5
 		get_tree().change_scene_to_packed(game_over)
 
 func _on_timer_timeout():

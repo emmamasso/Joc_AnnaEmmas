@@ -1,10 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://qfkloehchk32"]
+[gd_scene load_steps=10 format=3 uid="uid://qfkloehchk32"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Vides.gd" id="1_44fyg"]
 [ext_resource type="Texture2D" uid="uid://b4dv7qgei8o3e" path="res://Imatges/bolt_gold.png" id="2_fjbvk"]
 [ext_resource type="Script" path="res://Escenes/Scripts/BoltGold.gd" id="3_s7hx8"]
 [ext_resource type="Script" path="res://Escenes/Scripts/BoltGold2.gd" id="4_bfsu4"]
 [ext_resource type="Script" path="res://Escenes/Scripts/BoltGold3.gd" id="5_uw4j3"]
+[ext_resource type="Script" path="res://Escenes/Scripts/BoltGold4.gd" id="6_kvtul"]
+[ext_resource type="Script" path="res://Escenes/Scripts/BoltGold5.gd" id="7_y7qon"]
 
 [sub_resource type="Gradient" id="Gradient_hxsgb"]
 offsets = PackedFloat32Array(0.0974026, 1)
@@ -56,6 +58,34 @@ texture = ExtResource("2_fjbvk")
 script = ExtResource("5_uw4j3")
 
 [node name="Llum3" type="PointLight2D" parent="BoltGold3"]
+modulate = Color(0.992157, 0.686275, 0, 1)
+position = Vector2(-2, -3)
+rotation = 3.14159
+scale = Vector2(11.5088, -16.3462)
+energy = 2.0
+texture = SubResource("GradientTexture2D_0t8tw")
+texture_scale = 0.52
+
+[node name="BoltGold4" type="Sprite2D" parent="."]
+position = Vector2(56, 1)
+texture = ExtResource("2_fjbvk")
+script = ExtResource("6_kvtul")
+
+[node name="Llum3" type="PointLight2D" parent="BoltGold4"]
+modulate = Color(0.992157, 0.686275, 0, 1)
+position = Vector2(-2, -3)
+rotation = 3.14159
+scale = Vector2(11.5088, -16.3462)
+energy = 2.0
+texture = SubResource("GradientTexture2D_0t8tw")
+texture_scale = 0.52
+
+[node name="BoltGold5" type="Sprite2D" parent="."]
+position = Vector2(84, 1)
+texture = ExtResource("2_fjbvk")
+script = ExtResource("7_y7qon")
+
+[node name="Llum3" type="PointLight2D" parent="BoltGold5"]
 modulate = Color(0.992157, 0.686275, 0, 1)
 position = Vector2(-2, -3)
 rotation = 3.14159
