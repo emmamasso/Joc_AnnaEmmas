@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8k0tc1n3obi5"
+path="res://.godot/imported/triumph-83761.mp3-d99d3fbc028f558c8840b25c8aa2ccf7.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/You Win/triumph-83761.mp3"
+dest_files=["res://.godot/imported/triumph-83761.mp3-d99d3fbc028f558c8840b25c8aa2ccf7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
