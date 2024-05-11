@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://crwgsy7otd5i"]
+
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_2so8n"]
+[ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_14rmh"]
+[ext_resource type="FontFile" uid="uid://d4gehdo2q0n13" path="res://Lletra/space age.ttf" id="2_nqtil"]
+[ext_resource type="Script" path="res://Escenes/Scripts/tryagain.gd" id="3_7m4fo"]
+[ext_resource type="Script" path="res://Escenes/Scripts/ButtonHasPerdut.gd" id="5_72dwf"]
+
+[node name="has_guanyat" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fons" parent="." instance=ExtResource("1_2so8n")]
+
+[node name="tryagain" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.5
+offset_top = 107.5
+offset_right = 189.5
+offset_bottom = 188.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_14rmh")
+theme_override_font_sizes/font_size = 60
+text = "Try again"
+script = ExtResource("3_7m4fo")
+
+[node name="TextEdit2" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -337.0
+offset_right = 351.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/normal_font = ExtResource("2_nqtil")
+theme_override_font_sizes/normal_font_size = 90
+bbcode_enabled = true
+text = "[center]FELICITATS![/center]
+"
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.0
+offset_top = -211.0
+offset_right = 353.0
+offset_bottom = 161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 20
+theme_override_constants/shadow_offset_y = 20
+theme_override_fonts/normal_font = ExtResource("2_nqtil")
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]Has aconseguit aturar la invasió enemiga[/center]"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.5
+offset_top = 207.5
+offset_right = 324.5
+offset_bottom = 264.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_14rmh")
+theme_override_font_sizes/font_size = 40
+text = "Torna a la pantalla d'inici"
+script = ExtResource("5_72dwf")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

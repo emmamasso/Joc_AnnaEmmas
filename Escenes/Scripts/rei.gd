@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+var has_guanyat : PackedScene = load ("res://Escenes/has_guanyat.tscn")
 var SPEED = 0
 var vidarei = 10
 @export var escena_bales :PackedScene
@@ -14,6 +14,7 @@ func _physics_process(delta):
 	move_and_slide()
 	if vidarei ==0:
 		queue_free()
+		get_tree().change_scene_to_packed(has_guanyat)
 var nova_bala
 
 func dispara():
