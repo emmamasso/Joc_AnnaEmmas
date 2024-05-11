@@ -12,6 +12,6 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	if Vides.Vida<3:
+	if Vides.Vida<5:
 		Vides.Vida+=1
 	queue_free()
