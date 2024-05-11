@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://d4gehdo2q0n13" path="res://Lletra/space age.ttf" id="2_nqtil"]
 [ext_resource type="Script" path="res://Escenes/Scripts/tryagain.gd" id="3_7m4fo"]
 [ext_resource type="Script" path="res://Escenes/Scripts/ButtonHasPerdut.gd" id="5_72dwf"]
-[ext_resource type="AudioStream" uid="uid://c8k0tc1n3obi5" path="res://Música i Efectes de So/So/You Win/triumph-83761.mp3" id="6_c47ox"]
+[ext_resource type="AudioStream" uid="uid://bl218cr11oygw" path="res://Música i Efectes de So/So/You Win/winsquare-6993.mp3" id="7_5hk2n"]
 
 [node name="has_guanyat" type="Control"]
 layout_mode = 3
@@ -94,6 +94,7 @@ text = "Torna a la pantalla d'inici"
 script = ExtResource("5_72dwf")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_c47ox")
+stream = ExtResource("7_5hk2n")
+volume_db = 15.0
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
