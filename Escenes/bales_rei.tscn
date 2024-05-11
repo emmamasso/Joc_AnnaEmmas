@@ -1,21 +1,59 @@
-[gd_scene load_steps=3 format=3 uid="uid://6aki7ppq6rjj"]
+[gd_scene load_steps=8 format=3 uid="uid://6aki7ppq6rjj"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/bales_rei.gd" id="1_bt2vh"]
 [ext_resource type="Texture2D" uid="uid://dnhcf2ff1t46x" path="res://Imatges/Enemics/spaceMissiles_007.png" id="1_oldj0"]
+[ext_resource type="Texture2D" uid="uid://bra1afvwdvpaf" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_010.png" id="2_2ii5c"]
+[ext_resource type="Texture2D" uid="uid://db2yr1vecxyeo" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_011.png" id="3_63v84"]
+[ext_resource type="Texture2D" uid="uid://iw8w3e3bfkc8" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_012.png" id="4_yntsh"]
+[ext_resource type="Texture2D" uid="uid://rdu0dcsh5i4m" path="res://Imatges/Enemics/Animacio Bales/spaceEffects_016.png" id="5_f27rl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s6u1y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2ii5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_63v84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yntsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_f27rl")
+}],
+"loop": false,
+"name": &"Explosio",
+"speed": 55.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oldj0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="bales_rei" type="Area2D"]
+collision_layer = 8
+collision_mask = 5
 script = ExtResource("1_bt2vh")
-
-[node name="SpaceMissiles007" type="Sprite2D" parent="."]
-scale = Vector2(0.605264, 0.5625)
-texture = ExtResource("1_oldj0")
-flip_v = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-0.700013, 0.793453)
-scale = Vector2(0.582237, 0.574707)
-polygon = PackedVector2Array(7, 38.5, 7, 35.5, 15, 20.5, 15, -14.2, 19, -18.2, 19, -33.1, 17.1, -41, 1.9, -41, 0.6, -37, -0.6, -37, -1.9, -41, -17.4, -41, -19, -38.6, -19, -33.3, -19, -19, -15, -15.2, -15, 21, -13.5, 21, -10.6, 33, -8.9, 33, -4, 38.7, 5.3, 39)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.700009, 1.56249)
+scale = Vector2(0.582237, 0.5625)
+polygon = PackedVector2Array(7, 38.5, 7, 35.5, 15, 20.5, 15, -14.2, 19, -18.2, 19, -33.1, 17.1, -41, 1.9, -41, 0.6, -37, -0.6, -37, -1.9, -41, -17.4, -41, -19, -38.6, -19, -33.3, -19, -19, -15, -15.2, -15, 21, -13.5, 21, -10.6, 33, -8.9, 33, -4, 38.7, 5.3, 39)
+
+[node name="SpaceMissiles007" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.500001, 1.52163)
+scale = Vector2(0.657895, 0.563041)
+sprite_frames = SubResource("SpriteFrames_s6u1y")
+flip_v = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="animation_finished" from="SpaceMissiles007" to="." method="_on_space_missiles_007_animation_finished"]

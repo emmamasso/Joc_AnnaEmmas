@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 var SPEED = 0
+var vidarei = 10
 @export var escena_bales :PackedScene
+var x = 1
 func _ready():
 	SPEED = 0
 	$Timer.wait_time=400
@@ -10,7 +12,8 @@ func _ready():
 func _physics_process(delta):
 	velocity.y = SPEED 
 	move_and_slide()
-
+	if vidarei ==0:
+		queue_free()
 var nova_bala
 
 func dispara():
@@ -25,7 +28,9 @@ func dispara():
 		nova_bala.direccio = direccio
 
 func explota():
-	pass
+	vidarei += -1
+	self.modulate = Color(x,x,x)
+	x += -0.1
 
 func _on_timer_timeout():
 	dispara()

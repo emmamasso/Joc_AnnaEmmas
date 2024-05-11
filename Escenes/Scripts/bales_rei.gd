@@ -13,7 +13,20 @@ func _process(delta):
 	
 func _on_body_entered(body):
 	body.explota()
+	velocitat = 0
+	explota()
 
+func _on_area_entered(area):
+	area.explota()
+	velocitat = 0
+	explota()
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
+	queue_free()
+
+func explota():
+	$SpaceMissiles007.play("Explosio")
+
+
+func _on_space_missiles_007_animation_finished():
 	queue_free()
