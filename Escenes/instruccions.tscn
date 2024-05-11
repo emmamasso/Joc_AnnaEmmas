@@ -36,17 +36,19 @@ text = "[center]
 Aquest joc està inspirat en el clàssic \"space invaders\". 
 [/center]
 
-Com a jugador tindràs el control (fletxes del teclat) de la teva nau que és de color verd i el teu objectiu serà derrotar els enemics fent ús de la teva munició (per disparar prémer la tecla d'espai). Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'esuquivar les seves bales. Per sort,  hi ha  meteorits que podràs fer servir com a escut mentre durin. 
+El teu planeta ha estat invadit per naus enemigues del planeta roig. Tu ets l'ultim pilot de la resistència i has d'aturar l'exèrcit atacant. 
+Mou-te per esquivar les bales (fletxes del teclat) i derrota els enemics fent ús de la teva munició (per disparar prémer la tecla d'espai). Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'usar el teu enginy. Per sort,  hi ha  meteorits que podràs fer servir com a escut mentre durin. 
 
 ATENCIÓ: 
 	· La munició és limitada i podras 
 	  recarregar-la agafant els powerups 
 	  verds.
 	· Tens tres vides i els powerups 
-	  gorcs te n'afegeixen una.
+	  grocs te'n recuperen una.
 	· Pots pausar la partida prement la tecla \"esc\".
 
-Això és tot així que només queda desitjar-te: BONA SORT!"
+Això és tot. 
+Salva el planeta, sobretot que els enemics no travessin la línia de l'atmosfera, ets la última esperança."
 
 [node name="ButtonTornaAl\'Inici" type="Button" parent="."]
 layout_mode = 1
@@ -55,10 +57,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -245.0
-offset_top = -158.0
-offset_right = 245.0
-offset_bottom = -113.0
+offset_left = -264.0
+offset_top = -108.0
+offset_right = 256.0
+offset_bottom = -61.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_cbit3")
@@ -67,12 +69,12 @@ text = "Torna a la pantalla d'inici"
 script = ExtResource("3_j16fg")
 
 [node name="PowerupGreenShield" type="Sprite2D" parent="."]
-position = Vector2(718, 527)
+position = Vector2(719, 559)
 scale = Vector2(2, 2)
 texture = ExtResource("4_ywlc2")
 
 [node name="PowerupYellowBolt" type="Sprite2D" parent="."]
-position = Vector2(718, 607)
+position = Vector2(718, 654)
 scale = Vector2(2, 2)
 texture = ExtResource("5_nufce")
 
