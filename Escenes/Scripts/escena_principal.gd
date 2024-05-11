@@ -57,7 +57,7 @@ func _on_timer_timeout():
 func _on_timer_power_up_municio_timeout():
 	var nou_powerup= powerupmunicio.instantiate()
 	add_child(nou_powerup)
-	$TimerPowerUpMunicio.wait_time=randf_range(5,15)
+	$TimerPowerUpMunicio.wait_time=randf_range(5,12)
 	$TimerPowerUpMunicio.start()
 	
 func _on_timer_power_up_vides_timeout():
