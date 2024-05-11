@@ -29,3 +29,9 @@ func explota():
 func _on_visible_on_screen_notifier_2d_screen_exited():
 	queue_free()
 	
+
+
+func _on_area_entered(area):
+	velocitat_maxima = 0
+	area.explota()
+	explota()
