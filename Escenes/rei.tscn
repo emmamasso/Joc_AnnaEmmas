@@ -33,3 +33,4 @@ stream = ExtResource("4_ic8cb")
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tempsentrada" to="." method="_on_tempsentrada_timeout"]
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="finished" from="musica" to="." method="_on_musica_finished"]

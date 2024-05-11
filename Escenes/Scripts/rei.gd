@@ -6,8 +6,8 @@ var vidarei = 20
 var x = 1
 func _ready():
 	SPEED = 0
-	$Timer.wait_time=900
-	$Timer.start()
+	$Tempsentrada.wait_time=900
+	$Tempsentrada.start()
 	vidarei = 20
 	$musica.play()
 func _physics_process(delta):
@@ -52,3 +52,7 @@ func _on_tempsentrada_timeout():
 
 func _on_visible_on_screen_notifier_2d_screen_entered():
 	$musica.set_volume_db(10)
+
+
+func _on_musica_finished():
+	$musica.play()

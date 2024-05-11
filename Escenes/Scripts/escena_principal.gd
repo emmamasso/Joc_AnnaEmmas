@@ -66,11 +66,6 @@ func _on_timer_power_up_vides_timeout():
 	$TimerPowerUpVides.wait_time=randf_range(10,15)
 	$TimerPowerUpVides.start()
 
-
-func _on_musica_finished():
-	$musica.play()
-	
-
 func _on_meteorit_nou_timeout():
 	$meteorits.desapareixen()
 	var nou_meteorit= meteorits.instantiate()
