@@ -35,21 +35,21 @@ func _process(delta):
 func _on_timer_timeout():
 	if Vides.nombrepeo<30:
 		nou_peo = EscenaPeons.instantiate()
-		$Temps.start()
 		nou_peo.position = posicio_inicial_peo
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeo += 1
+		$Temps.start()
 	elif Vides.nombrepeo==30:
-		$Temps.wait_time = 0.5
+		$Temps.wait_time = 0.75
 		$Temps.start()
 		Vides.nombrepeo += 1
 	elif Vides.nombrenobles<15 and Vides.nombrepeo>30:
 		var nou_noble = EscenaNobles.instantiate()
-		$Temps.wait_time = 1.25
-		$Temps.start() 
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
 		Vides.nombrenobles += 1
+		$Temps.wait_time = 1.25
+		$Temps.start() 
 	elif Vides.nombrenobles ==15:
 		$rei/Tempsentrada.start()
 		Vides.nombrenobles += 1 
