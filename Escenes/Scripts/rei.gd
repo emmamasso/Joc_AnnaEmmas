@@ -20,7 +20,7 @@ func _physics_process(delta):
 		get_tree().change_scene_to_packed(has_guanyat)
 
 func dispara():
-	var n_bales = 25
+	var n_bales = 28
 	var direccio = Vector2.RIGHT 
 	var rotacio = -90
 	for i in range(n_bales):
@@ -28,7 +28,7 @@ func dispara():
 		Vides.Balespeons.add_child(nova_bala)
 		nova_bala.global_position = global_position
 		nova_bala.rotation_degrees=rotacio
-		rotacio+=20
+		rotacio+=12.9
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
 		$balesrei.play()
@@ -46,7 +46,7 @@ func _on_timer_timeout():
 
 
 func _on_tempsentrada_timeout():
-	SPEED = 5
+	SPEED = 8
 	$Tempsentrada.stop()
 	$Timer.wait_time=40
 	$Timer.start()
