@@ -29,12 +29,13 @@ func explota():
 
 func _on_timer_timeout():
 	dispara()
-	$Timer.wait_time=randf_range(30,70)
+	print("done")
+	$Timer.wait_time=randf_range(10,30)
 	$Timer.start()
 
 
 func _on_tempsentrada_timeout():
 	SPEED = 6
 	$Tempsentrada.stop()
-	$Timer.wait_time=20
-	$Timer.start
+	$Timer.wait_time=40
+	$Timer.start()
