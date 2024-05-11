@@ -10,7 +10,7 @@ func _process(delta):
 	
 
 func _on_body_entered(body):
-	if Vides.bales<5:
+	if Vides.bales<10:
 		Vides.bales+=5
 	else:
 		Vides.bales=15
