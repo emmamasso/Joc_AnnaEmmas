@@ -12,13 +12,11 @@ func _process(delta):
 	position += direccio * velocitat * delta
 	
 func _on_body_entered(body):
-	print("donebody")
 	body.explota()
 	velocitat = 0
 	explota()
 
 func _on_area_entered(area):
-	print("donearea")
 	area.explota()
 	velocitat = 0
 	explota()
