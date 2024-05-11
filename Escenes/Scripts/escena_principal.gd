@@ -51,7 +51,7 @@ func _on_timer_timeout():
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
 		Vides.nombrenobles += 1
-	elif Vides.nombrenobles == 10:
+	elif Vides.nombrenobles ==15:
 		$rei/Tempsentrada.start()
 		Vides.nombrenobles += 1 
 

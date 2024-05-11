@@ -8,7 +8,7 @@ func _ready():
 	SPEED = 0
 	$Timer.wait_time=400
 	$Timer.start()
-	
+	vidarei = 20
 func _physics_process(delta):
 	velocity.y = SPEED 
 	move_and_slide()
