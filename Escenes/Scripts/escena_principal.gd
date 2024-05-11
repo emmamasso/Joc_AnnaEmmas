@@ -25,7 +25,6 @@ func _ready():
 	$TimerPowerUpVides.start()
 	$MeteoritNou.wait_time=randf_range(70,80)
 	$MeteoritNou.start()
-	$musica.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

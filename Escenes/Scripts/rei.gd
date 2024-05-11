@@ -6,9 +6,10 @@ var vidarei = 20
 var x = 1
 func _ready():
 	SPEED = 0
-	$Timer.wait_time=400
+	$Timer.wait_time=500
 	$Timer.start()
 	vidarei = 20
+	$musica.play()
 func _physics_process(delta):
 	velocity.y = SPEED 
 	move_and_slide()
@@ -36,7 +37,7 @@ func explota():
 func _on_timer_timeout():
 	dispara()
 	print("done")
-	$Timer.wait_time=randf_range(10,30)
+	$Timer.wait_time=randf_range(5,25)
 	$Timer.start()
 
 
@@ -45,3 +46,7 @@ func _on_tempsentrada_timeout():
 	$Tempsentrada.stop()
 	$Timer.wait_time=40
 	$Timer.start()
+
+
+func _on_visible_on_screen_notifier_2d_screen_entered():
+	$musica.set_volume_db(15)

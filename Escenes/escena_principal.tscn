@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://xxc8efvd6f8w"]
+[gd_scene load_steps=13 format=3 uid="uid://xxc8efvd6f8w"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_principal.gd" id="1_4p658"]
 [ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="2_v5ttc"]
@@ -11,7 +11,6 @@
 [ext_resource type="Script" path="res://Escenes/Scripts/Balanobles.gd" id="12_ak2gg"]
 [ext_resource type="PackedScene" uid="uid://giw5ieqvwem2" path="res://Escenes/rei.tscn" id="13_5d3mg"]
 [ext_resource type="PackedScene" uid="uid://cb6jbbojwg1b8" path="res://Escenes/menu.tscn" id="13_vh3il"]
-[ext_resource type="AudioStream" uid="uid://bwf7swki6xo7v" path="res://Música i Efectes de So/Música/retro-wave-melodie-128-bpm-8970.mp3" id="14_j23b8"]
 [ext_resource type="PackedScene" uid="uid://ef42jtqfprct" path="res://Escenes/barra_limit_enemics.tscn" id="15_shns7"]
 
 [node name="Escena Principal" type="Node2D"]
@@ -66,10 +65,6 @@ script = ExtResource("12_ak2gg")
 
 [node name="Menu" parent="." instance=ExtResource("13_vh3il")]
 
-[node name="musica" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_j23b8")
-volume_db = -15.928
-
 [node name="BarraLimitEnemics" parent="." instance=ExtResource("15_shns7")]
 position = Vector2(-3, 753)
 
@@ -84,6 +79,5 @@ position = Vector2(415, -107)
 [connection signal="timeout" from="Temps" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerPowerUpMunicio" to="." method="_on_timer_power_up_municio_timeout"]
 [connection signal="timeout" from="TimerPowerUpVides" to="." method="_on_timer_power_up_vides_timeout"]
-[connection signal="finished" from="musica" to="." method="_on_musica_finished"]
 [connection signal="timeout" from="MeteoritNou" to="." method="_on_meteorit_nou_timeout"]
 [connection signal="timeout" from="Inicijoc" to="." method="_on_inicijoc_timeout"]
