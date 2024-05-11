@@ -6,8 +6,6 @@ var vidarei = 20
 var x = 1
 func _ready():
 	SPEED = 0
-	$Tempsentrada.wait_time=300
-	$Tempsentrada.start()
 	vidarei = 20
 	$musica.play()
 func _physics_process(delta):
