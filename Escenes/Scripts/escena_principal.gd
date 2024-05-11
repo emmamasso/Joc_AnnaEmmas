@@ -79,5 +79,5 @@ func _on_meteorit_nou_timeout():
 	$MeteoritNou.stop()
 
 func _on_inicijoc_timeout():
-	$Temps.start()
 	$Temps.wait_time = 1.25
+	$Temps.start()
