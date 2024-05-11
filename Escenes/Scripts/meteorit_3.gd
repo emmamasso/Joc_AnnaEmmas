@@ -1,5 +1,5 @@
 extends Node2D
-var posicio3=randi_range(450,550)
+var posicio3=randi_range(460,550)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

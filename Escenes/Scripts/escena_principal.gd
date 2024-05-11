@@ -40,7 +40,7 @@ func _on_timer_timeout():
 		Vides.nombrepeo += 1
 		$Temps.start()
 	elif Vides.nombrepeo==30:
-		$Temps.wait_time = 2
+		$Temps.wait_time = 4
 		$Temps.start()
 		Vides.nombrepeo += 1
 	elif Vides.nombrenobles<15 and Vides.nombrepeo>30:
