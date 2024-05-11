@@ -1,7 +1,7 @@
 extends CharacterBody2D
 var has_guanyat : PackedScene = load ("res://Escenes/has_guanyat.tscn")
 var SPEED = 0
-var vidarei = 10
+var vidarei = 20
 @export var escena_bales :PackedScene
 var x = 1
 func _ready():
@@ -31,7 +31,7 @@ func dispara():
 func explota():
 	vidarei += -1
 	self.modulate = Color(x,x,x)
-	x += -0.1
+	x += -0.05
 
 func _on_timer_timeout():
 	dispara()
