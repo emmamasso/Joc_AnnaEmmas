@@ -28,6 +28,8 @@ wait_time = 10.0
 wait_time = 5.0
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-1, -0.500004)
+scale = Vector2(9.8, 8.95)
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_ic8cb")
