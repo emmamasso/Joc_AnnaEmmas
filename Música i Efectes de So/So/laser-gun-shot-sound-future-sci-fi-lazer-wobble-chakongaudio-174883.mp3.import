@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2dyt7o8whqjx"
+path="res://.godot/imported/laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883.mp3-69a1e03717f35ea1a3cfe524569fba34.mp3str"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883.mp3"
+dest_files=["res://.godot/imported/laser-gun-shot-sound-future-sci-fi-lazer-wobble-chakongaudio-174883.mp3-69a1e03717f35ea1a3cfe524569fba34.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

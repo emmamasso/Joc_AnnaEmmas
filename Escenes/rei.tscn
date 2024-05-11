@@ -7,8 +7,9 @@
 [ext_resource type="AudioStream" uid="uid://bhnblx3xiqk8p" path="res://Música i Efectes de So/So/laserLarge_004.ogg" id="5_dd4iy"]
 
 [node name="rei" type="CharacterBody2D"]
+position = Vector2(0, -1)
 collision_layer = 2
-collision_mask = 8
+collision_mask = 4
 script = ExtResource("1_bafw5")
 escena_bales = ExtResource("3_2txss")
 
