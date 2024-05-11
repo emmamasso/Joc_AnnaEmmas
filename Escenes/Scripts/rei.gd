@@ -6,7 +6,7 @@ var vidarei = 20
 var x = 1
 func _ready():
 	SPEED = 0
-	$Tempsentrada.wait_time=900
+	$Tempsentrada.wait_time=300
 	$Tempsentrada.start()
 	vidarei = 20
 	$musica.play()
