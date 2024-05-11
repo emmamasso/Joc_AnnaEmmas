@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Nobles.gd" id="1_ltm4e"]
 [ext_resource type="Texture2D" uid="uid://biniu6ip7nx0f" path="res://Imatges/Enemics/Nobles/spaceShips_002.png" id="2_i40b5"]
-[ext_resource type="AudioStream" uid="uid://bxok87yohwqo" path="res://Música i Efectes de So/So/sfx_zap.ogg" id="3_he57p"]
+[ext_resource type="AudioStream" uid="uid://0f5cet7lduvf" path="res://Música i Efectes de So/So/laserRetro_001.ogg" id="3_sbrst"]
 
 [node name="Nobles" type="CharacterBody2D"]
 collision_layer = 2
@@ -20,7 +20,7 @@ polygon = PackedVector2Array(-62, -102, -58, -99, -58, -64.5, -55.9, -61, -53.9,
 texture = ExtResource("2_i40b5")
 
 [node name="SorollBala" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_he57p")
+stream = ExtResource("3_sbrst")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="TimerDisparar" to="." method="_on_timer_disparar_timeout"]

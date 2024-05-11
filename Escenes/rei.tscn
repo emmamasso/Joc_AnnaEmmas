@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://giw5ieqvwem2"]
+[gd_scene load_steps=6 format=3 uid="uid://giw5ieqvwem2"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/rei.gd" id="1_bafw5"]
 [ext_resource type="Texture2D" uid="uid://ddjswwl8a28g" path="res://Imatges/Enemics/REI.png" id="2_fki3x"]
 [ext_resource type="PackedScene" uid="uid://6aki7ppq6rjj" path="res://Escenes/bales_rei.tscn" id="3_2txss"]
 [ext_resource type="AudioStream" uid="uid://bwf7swki6xo7v" path="res://Música i Efectes de So/Música/retro-wave-melodie-128-bpm-8970.mp3" id="4_ic8cb"]
+[ext_resource type="AudioStream" uid="uid://bhnblx3xiqk8p" path="res://Música i Efectes de So/So/laserLarge_004.ogg" id="5_dd4iy"]
 
 [node name="rei" type="CharacterBody2D"]
 collision_layer = 2
@@ -29,6 +30,9 @@ wait_time = 0.5
 
 [node name="musica" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_ic8cb")
+
+[node name="balesrei" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dd4iy")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tempsentrada" to="." method="_on_tempsentrada_timeout"]

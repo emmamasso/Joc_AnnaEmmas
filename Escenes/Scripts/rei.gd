@@ -27,9 +27,10 @@ func dispara():
 		Vides.Balespeons.add_child(nova_bala)
 		nova_bala.global_position = global_position
 		nova_bala.rotation_degrees=rotacio
-		rotacio+=24
+		rotacio+=30
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
+		$balesrei.play()
 
 func explota():
 	vidarei += -1

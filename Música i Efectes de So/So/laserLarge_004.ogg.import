@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhnblx3xiqk8p"
+path="res://.godot/imported/laserLarge_004.ogg-43d2307697b9577903fa5c9413118f9c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/laserLarge_004.ogg"
+dest_files=["res://.godot/imported/laserLarge_004.ogg-43d2307697b9577903fa5c9413118f9c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
