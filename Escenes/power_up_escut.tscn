@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqytjw8ygw4cj"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/power_up_escut.gd" id="1_625xo"]
+[ext_resource type="Texture2D" uid="uid://c685it1480trq" path="res://Imatges/PowerUps/powerupBlue_shield.png" id="1_b6fmx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ngjaa"]
+size = Vector2(33, 33)
+
+[node name="power_up_escut" type="Area2D"]
+script = ExtResource("1_625xo")
+
+[node name="PowerupBlueShield" type="Sprite2D" parent="."]
+texture = ExtResource("1_b6fmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_ngjaa")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
