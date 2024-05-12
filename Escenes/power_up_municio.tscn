@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://8vejpd3m5ykk"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/power_up_municio.gd" id="1_ik83v"]
-[ext_resource type="Texture2D" uid="uid://yomduavxd351" path="res://Imatges/PowerUps/powerupGreen_shield.png" id="2_sntx3"]
+[ext_resource type="Texture2D" uid="uid://ckrn5dtsiepov" path="res://Imatges/PowerUps/powerupGreen_star.png" id="2_aw5ve"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rmaem"]
 size = Vector2(30, 32.381)
@@ -10,12 +10,12 @@ size = Vector2(30, 32.381)
 collision_layer = 32
 script = ExtResource("1_ik83v")
 
-[node name="PowerupGreenShield" type="Sprite2D" parent="."]
-texture = ExtResource("2_sntx3")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0)
 scale = Vector2(1.1, 1.05)
 shape = SubResource("RectangleShape2D_rmaem")
+
+[node name="PowerupGreenStar" type="Sprite2D" parent="."]
+texture = ExtResource("2_aw5ve")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

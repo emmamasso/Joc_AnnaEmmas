@@ -12,11 +12,11 @@
 [ext_resource type="PackedScene" uid="uid://bbodxgu0jsqrq" path="res://Escenes/Munició/municio_8.tscn" id="10_p5ssn"]
 [ext_resource type="PackedScene" uid="uid://7qgls0nd4a8x" path="res://Escenes/Munició/municio_9.tscn" id="11_q5ydt"]
 [ext_resource type="PackedScene" uid="uid://c46f31qkwirsb" path="res://Escenes/Munició/municio_10.tscn" id="12_daskr"]
-[ext_resource type="Texture2D" uid="uid://csiu3m8p6r441" path="res://Imatges/PowerUps/shield_silver.png" id="12_s3e4b"]
 [ext_resource type="PackedScene" uid="uid://b32ydqpvxynrx" path="res://Escenes/Munició/municio_11.tscn" id="13_p4bxk"]
 [ext_resource type="PackedScene" uid="uid://dpe5f37qhpywu" path="res://Escenes/Munició/municiio_12.tscn" id="14_iienm"]
 [ext_resource type="PackedScene" uid="uid://k0j57syikts1" path="res://Escenes/Munició/municio_13.tscn" id="15_jqfh6"]
 [ext_resource type="PackedScene" uid="uid://rnbhpavsp1o" path="res://Escenes/Munició/municio_14.tscn" id="17_j4v7c"]
+[ext_resource type="Texture2D" uid="uid://clca2icwtqgl3" path="res://Imatges/PowerUps/star_silver.png" id="17_m5mbj"]
 
 [node name="BarraDeMunicio" type="ColorRect"]
 offset_top = -24.0
@@ -113,6 +113,7 @@ offset_right = 22.0
 offset_bottom = 61.0
 
 [node name="municiio12" parent="." instance=ExtResource("14_iienm")]
+layout_mode = 0
 offset_left = 2.0
 offset_top = 44.0
 offset_right = 22.0
@@ -125,16 +126,15 @@ offset_top = 35.0
 offset_right = 22.0
 offset_bottom = 43.0
 
-[node name="ShieldSilver" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(12, 12)
-rotation = -1.5708
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("12_s3e4b")
-
 [node name="municio14" parent="." instance=ExtResource("17_j4v7c")]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 26.0
 offset_right = 22.0
 offset_bottom = 34.0
+
+[node name="StarSilver" type="Sprite2D" parent="."]
+position = Vector2(12, 13)
+rotation = -1.5708
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("17_m5mbj")
