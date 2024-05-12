@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dnpya8aidrhp3"
+path="res://.godot/imported/sfx_shieldDown.ogg-daceb5e2a543c54e9fadeb53001e9ec1.oggvorbisstr"
+
+[deps]
+
+source_file="res://Música i Efectes de So/So/sfx_shieldDown.ogg"
+dest_files=["res://.godot/imported/sfx_shieldDown.ogg-daceb5e2a543c54e9fadeb53001e9ec1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

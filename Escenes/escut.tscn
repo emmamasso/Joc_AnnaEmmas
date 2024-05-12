@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3qlkyqrcd6hl"]
+[gd_scene load_steps=8 format=3 uid="uid://c3qlkyqrcd6hl"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/escut.gd" id="1_j5u48"]
 [ext_resource type="Texture2D" uid="uid://brp2ybx6x7aqy" path="res://Imatges/Escut/shield1.png" id="2_w3k6t"]
 [ext_resource type="Texture2D" uid="uid://cddjcd1asqi1b" path="res://Imatges/Escut/shield2.png" id="3_bchv2"]
 [ext_resource type="Texture2D" uid="uid://c4rved8wryqwf" path="res://Imatges/Escut/shield3.png" id="4_ghaq8"]
+[ext_resource type="AudioStream" uid="uid://bw6rctbxmnatk" path="res://Música i Efectes de So/So/sfx_shieldUp.ogg" id="5_amhrt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dcwn5"]
 animations = [{
@@ -18,13 +19,8 @@ animations = [{
 "texture": ExtResource("4_ghaq8")
 }],
 "loop": false,
-"name": &"default",
-"speed": 15.0
-}, {
-"frames": [],
-"loop": true,
 "name": &"escut",
-"speed": 5.0
+"speed": 50.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3ye2"]
@@ -39,6 +35,7 @@ wait_time = 8.0
 
 [node name="animacioescut" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_dcwn5")
+animation = &"escut"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 14)
@@ -46,6 +43,11 @@ shape = SubResource("CircleShape2D_m3ye2")
 
 [node name="pampallugues" type="Timer" parent="."]
 wait_time = 0.1
+
+[node name="shield_down" type="AudioStreamPlayer" parent="."]
+
+[node name="shieldup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_amhrt")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="pampallugues" to="." method="_on_pampallugues_timeout"]
