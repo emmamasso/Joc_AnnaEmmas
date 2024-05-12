@@ -43,7 +43,7 @@ size = Vector2(9, 34)
 
 [node name="bales_nobles" type="Area2D"]
 collision_layer = 8
-collision_mask = 5
+collision_mask = 517
 script = ExtResource("1_beixs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

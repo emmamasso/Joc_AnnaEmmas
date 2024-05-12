@@ -37,7 +37,7 @@ animations = [{
 
 [node name="bales_rei" type="Area2D"]
 collision_layer = 8
-collision_mask = 21
+collision_mask = 533
 script = ExtResource("1_bt2vh")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

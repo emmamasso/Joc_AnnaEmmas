@@ -3,6 +3,7 @@ extends CharacterBody2D
 var direccio := Vector2 (0,0)
 const SPEED = 340.0
 const JUMP_VELOCITY = -400.0
+var escut:PackedScene = load("res://Escenes/escut.tscn")
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 
 
@@ -29,6 +30,12 @@ func _physics_process(delta):
 	move_and_slide()
 	#else:
 	#	velocity.x = 0
+	if Vides.crear_escut==true:
+		var escutnou = escut.instantiate()
+		add_child(escutnou)
+		if Vides.so==true:
+			$shieldup.play()
+		Vides.crear_escut=false
 	
 var nou_laser
 func dispara():

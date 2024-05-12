@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://brp2ybx6x7aqy" path="res://Imatges/Escut/shield1.png" id="2_w3k6t"]
 [ext_resource type="Texture2D" uid="uid://cddjcd1asqi1b" path="res://Imatges/Escut/shield2.png" id="3_bchv2"]
 [ext_resource type="Texture2D" uid="uid://c4rved8wryqwf" path="res://Imatges/Escut/shield3.png" id="4_ghaq8"]
-[ext_resource type="AudioStream" uid="uid://bw6rctbxmnatk" path="res://Música i Efectes de So/So/sfx_shieldUp.ogg" id="5_amhrt"]
+[ext_resource type="AudioStream" uid="uid://dnpya8aidrhp3" path="res://Música i Efectes de So/So/sfx_shieldDown.ogg" id="6_awgtu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dcwn5"]
 animations = [{
@@ -20,34 +20,38 @@ animations = [{
 }],
 "loop": false,
 "name": &"escut",
-"speed": 50.0
+"speed": 25.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m3ye2"]
 radius = 68.0074
 
 [node name="escut" type="Area2D"]
+position = Vector2(0, -14)
+scale = Vector2(1.15, 1.15)
+collision_layer = 512
 collision_mask = 8
 script = ExtResource("1_j5u48")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 8.0
+wait_time = 10.0
 
 [node name="animacioescut" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.15, 1.15)
 sprite_frames = SubResource("SpriteFrames_dcwn5")
 animation = &"escut"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 14)
+position = Vector2(0, 7.07692)
+scale = Vector2(1.15, 1.15)
 shape = SubResource("CircleShape2D_m3ye2")
 
 [node name="pampallugues" type="Timer" parent="."]
 wait_time = 0.1
 
 [node name="shield_down" type="AudioStreamPlayer" parent="."]
-
-[node name="shieldup" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_amhrt")
+stream = ExtResource("6_awgtu")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="pampallugues" to="." method="_on_pampallugues_timeout"]
+[connection signal="finished" from="shield_down" to="." method="_on_shield_down_finished"]

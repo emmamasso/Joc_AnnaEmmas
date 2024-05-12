@@ -9,7 +9,7 @@ var powerupvida:PackedScene = load("res://Escenes/power_up_vida.tscn")
 var EscenaNobles: PackedScene = load("res://Escenes/nobles.tscn")
 var posicio_inicial_noble = Vector2(170,175)
 var meteorits:PackedScene = load("res://Escenes/meteorits.tscn")
-
+var powerupescut:PackedScene = load("res://Escenes/power_up_escut.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,6 +25,8 @@ func _ready():
 	$TimerPowerUpVides.start()
 	$MeteoritNou.wait_time=randf_range(70,80)
 	$MeteoritNou.start()
+	$escut.wait_time=randf_range(30,50)
+	$escut.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -75,3 +77,10 @@ func _on_meteorit_nou_timeout():
 func _on_inicijoc_timeout():
 	$Temps.wait_time = 1.25
 	$Temps.start()
+
+
+func _on_escut_timeout():
+	var nou_powerupescut = powerupescut.instantiate()
+	add_child(nou_powerupescut)
+	$escut.wait_time=randf_range(20,30)
+	$escut.start()

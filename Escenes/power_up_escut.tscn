@@ -7,6 +7,7 @@
 size = Vector2(33, 33)
 
 [node name="power_up_escut" type="Area2D"]
+collision_layer = 32
 script = ExtResource("1_625xo")
 
 [node name="PowerupBlueShield" type="Sprite2D" parent="."]

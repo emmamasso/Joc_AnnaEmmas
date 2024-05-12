@@ -5,8 +5,6 @@ var n_pampallugues=0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$animacioescut.play("escut")
-	if Vides.so==true:
-		$shieldup.play()
 	$Timer.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,4 +30,10 @@ func _on_pampallugues_timeout():
 		$pampallugues.stop()
 		if Vides.so==true:
 			$shield_down.play()
-		queue_free()
+
+func explota():
+	pass
+
+
+func _on_shield_down_finished():
+	queue_free()

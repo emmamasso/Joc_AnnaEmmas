@@ -14,19 +14,19 @@
 script = ExtResource("1_npa3b")
 
 [node name="Meteorit1" parent="." instance=ExtResource("1_m7pfq")]
-position = Vector2(300, 707)
+position = Vector2(300, 687)
 script = ExtResource("3_4h67d")
 
 [node name="Meteorit2" parent="." instance=ExtResource("2_3fayy")]
-position = Vector2(486, 709)
+position = Vector2(486, 689)
 script = ExtResource("5_cwtax")
 
 [node name="Meteorit3" parent="." instance=ExtResource("3_vrakv")]
-position = Vector2(105, 706)
+position = Vector2(105, 686)
 script = ExtResource("7_byl2y")
 
 [node name="meteorit4" parent="." instance=ExtResource("4_xni0a")]
-position = Vector2(685, 711)
+position = Vector2(685, 691)
 script = ExtResource("9_ag6nc")
 
 [node name="Timer" type="Timer" parent="."]

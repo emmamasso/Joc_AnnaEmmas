@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2npjp6am2n2f"]
+[gd_scene load_steps=5 format=3 uid="uid://c2npjp6am2n2f"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Avió.gd" id="1_02o88"]
 [ext_resource type="Texture2D" uid="uid://dr0evfuyo4j30" path="res://Imatges/Avió.png" id="2_lx8pc"]
 [ext_resource type="AudioStream" uid="uid://77x0mdfpv7ao" path="res://Música i Efectes de So/So/sfx_laser1.ogg" id="3_ao5ls"]
+[ext_resource type="AudioStream" uid="uid://bw6rctbxmnatk" path="res://Música i Efectes de So/So/sfx_shieldUp.ogg" id="4_m8jqh"]
 
 [node name="Avió" type="CharacterBody2D"]
 position = Vector2(-1, 1)
@@ -29,6 +30,9 @@ wait_time = 0.065
 
 [node name="SorollLaser" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_ao5ls")
+
+[node name="shieldup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_m8jqh")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
