@@ -33,6 +33,7 @@ stream = ExtResource("3_ao5ls")
 
 [node name="shieldup" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_m8jqh")
+volume_db = 8.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

@@ -51,6 +51,7 @@ wait_time = 0.1
 
 [node name="shield_down" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_awgtu")
+volume_db = 8.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="pampallugues" to="." method="_on_pampallugues_timeout"]
