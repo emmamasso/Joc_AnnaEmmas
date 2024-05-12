@@ -38,7 +38,8 @@ func dispara():
 		nou_laser.global_position = global_position
 		%Lasers.add_child(nou_laser)
 		Vides.bales+= -1
-		$SorollLaser.play()
+		if Vides.so==true:
+			$SorollLaser.play()
 	else:
 		pass
 func explota():

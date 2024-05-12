@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7pkc16wos6kx"]
+
+[ext_resource type="Script" path="res://Escenes/Scripts/configuració.gd" id="1_4e2on"]
+[ext_resource type="PackedScene" uid="uid://bcvevk2c565f7" path="res://Escenes/fons.tscn" id="1_aqiku"]
+[ext_resource type="FontFile" uid="uid://h206ds2ea02d" path="res://Lletra/Neuropol.otf" id="2_wkw1k"]
+
+[node name="Configuració" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4e2on")
+
+[node name="Fons" parent="." instance=ExtResource("1_aqiku")]
+
+[node name="Musica" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 49.0
+offset_top = 151.0
+offset_right = 93.0
+offset_bottom = 182.0
+grow_horizontal = 2
+scale = Vector2(4.50804, 4.71888)
+button_pressed = true
+
+[node name="So" type="CheckButton" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 60.0
+offset_top = 410.0
+offset_right = 104.0
+offset_bottom = 441.0
+grow_horizontal = 2
+scale = Vector2(4.50804, 4.71888)
+
+[node name="Música" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 191.0
+offset_right = 495.0
+offset_bottom = 283.0
+theme_override_fonts/normal_font = ExtResource("2_wkw1k")
+theme_override_font_sizes/normal_font_size = 50
+text = "Música"
+
+[node name="So2" type="RichTextLabel" parent="."]
+offset_left = 186.0
+offset_top = 416.0
+offset_right = 497.0
+offset_bottom = 543.0
+theme_override_fonts/normal_font = ExtResource("2_wkw1k")
+theme_override_font_sizes/normal_font_size = 50
+text = "Efectes de so"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -292.0
+offset_top = 127.0
+offset_right = 292.0
+offset_bottom = 257.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_wkw1k")
+theme_override_font_sizes/font_size = 50
+text = "Torna a la 
+pantalla d'inici"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

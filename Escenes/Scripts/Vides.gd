@@ -7,6 +7,8 @@ var posicio_disparar2 = 42
 var bales=15
 var nombrepeo =0
 var nombrenobles =0
+var so=true
+var musica=true
 func _process(delta):
 	posicio_disparar2 = posicio_disparar1 + 2
 	if posicio_disparar1 >= 825:

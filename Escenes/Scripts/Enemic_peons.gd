@@ -31,7 +31,8 @@ func disparar_bala():
 	var nova_bala = bala.instantiate()
 	Vides.Balespeons.add_child(nova_bala)
 	nova_bala.global_position = global_position
-	$SorollBala.play()
+	if Vides.so==true:
+		$SorollBala.play()
 
 
 func _on_timer_disparar_timeout():

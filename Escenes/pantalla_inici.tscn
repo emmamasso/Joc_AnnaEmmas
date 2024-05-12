@@ -66,9 +66,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -169.0
-offset_top = 100.5
+offset_top = 116.5
 offset_right = 169.0
-offset_bottom = 157.5
+offset_bottom = 173.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ch0nx")
@@ -83,16 +83,34 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -299.5
-offset_top = 208.5
-offset_right = 299.5
-offset_bottom = 277.5
+offset_left = -359.5
+offset_top = 218.5
+offset_right = 359.5
+offset_bottom = 299.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ch0nx")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 60
 text = "COMENÇA EL JOC"
 script = ExtResource("5_un4pc")
 
+[node name="configuraciobutton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.5
+offset_top = 45.5
+offset_right = 168.5
+offset_bottom = 102.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ch0nx")
+theme_override_font_sizes/font_size = 40
+text = "Configuració"
+
 [connection signal="pressed" from="instruccions" to="instruccions" method="_on_pressed"]
 [connection signal="pressed" from="comença" to="comença" method="_on_pressed"]
+[connection signal="pressed" from="configuraciobutton" to="." method="_on_configuraciobutton_pressed"]

@@ -10,7 +10,8 @@ var nova_bala
 func _ready():
 	SPEED = 0
 	vidarei = 20
-	$musica.play()
+	if Vides.musica==true:
+		$musica.play()
 
 func _physics_process(delta):
 	velocity.y = SPEED 
@@ -31,7 +32,8 @@ func dispara():
 		rotacio+=12.9
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
-		$balesrei.play()
+		if Vides.so==true:
+			$balesrei.play()
 
 func explota():
 	vidarei += -1

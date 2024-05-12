@@ -1,12 +1,13 @@
-extends Control
+extends Button
+var configuracio:PackedScene = load("res://Escenes/configuració.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if Vides.so==true:
-		$AudioStreamPlayer.play()
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	get_tree().change_scene_to_packed(configuracio)
+
