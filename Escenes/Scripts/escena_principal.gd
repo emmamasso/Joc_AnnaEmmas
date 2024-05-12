@@ -35,24 +35,24 @@ func _process(delta):
 		get_tree().change_scene_to_packed(game_over)
 
 func _on_timer_timeout():
-	if Vides.nombrepeo<30:
+	if Vides.nombrepeo<40:
 		nou_peo = EscenaPeons.instantiate()
 		nou_peo.position = posicio_inicial_peo
 		%Peons.add_child(nou_peo)
 		Vides.nombrepeo += 1
 		$Temps.start()
-	elif Vides.nombrepeo==30:
+	elif Vides.nombrepeo==40:
 		$Temps.wait_time = 1
 		$Temps.start()
 		Vides.nombrepeo += 1
-	elif Vides.nombrenobles<15 and Vides.nombrepeo>30:
+	elif Vides.nombrenobles<20 and Vides.nombrepeo>40:
 		var nou_noble = EscenaNobles.instantiate()
 		nou_noble.position = posicio_inicial_noble
 		%Nobles.add_child(nou_noble)
 		Vides.nombrenobles += 1
 		$Temps.wait_time = 1.25
 		$Temps.start() 
-	elif Vides.nombrenobles ==15:
+	elif Vides.nombrenobles ==20:
 		$rei/Tempsentrada.start()
 		Vides.nombrenobles += 1 
 
