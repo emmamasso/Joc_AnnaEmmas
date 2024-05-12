@@ -25,7 +25,7 @@ func _ready():
 	$TimerPowerUpVides.start()
 	$MeteoritNou.wait_time=randf_range(70,80)
 	$MeteoritNou.start()
-	$escut.wait_time=randf_range(30,50)
+	$escut.wait_time=randf_range(50,70)
 	$escut.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -82,5 +82,5 @@ func _on_inicijoc_timeout():
 func _on_escut_timeout():
 	var nou_powerupescut = powerupescut.instantiate()
 	add_child(nou_powerupescut)
-	$escut.wait_time=randf_range(20,30)
+	$escut.wait_time=randf_range(40,50)
 	$escut.start()

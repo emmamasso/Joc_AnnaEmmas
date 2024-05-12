@@ -31,7 +31,7 @@ scale = Vector2(0.85, 0.85)
 unique_name_in_owner = true
 
 [node name="BarraLimitEnemics" parent="." instance=ExtResource("15_shns7")]
-position = Vector2(-3, 747)
+position = Vector2(-3, 757)
 
 [node name="Avió" parent="." instance=ExtResource("6_1umba")]
 position = Vector2(419, 875)
