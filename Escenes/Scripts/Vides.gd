@@ -7,6 +7,7 @@ var posicio_disparar2 = 42
 var bales=15
 var nombrepeo =0
 var nombrenobles =0
+var coloravio=true
 var so=true
 var musica=true
 var crear_escut=false

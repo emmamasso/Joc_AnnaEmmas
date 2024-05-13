@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2npjp6am2n2f"]
+[gd_scene load_steps=6 format=3 uid="uid://c2npjp6am2n2f"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/Avió.gd" id="1_02o88"]
 [ext_resource type="Texture2D" uid="uid://dr0evfuyo4j30" path="res://Imatges/Avió.png" id="2_lx8pc"]
+[ext_resource type="Script" path="res://Escenes/Scripts/avionetimatge.gd" id="3_4dpdd"]
 [ext_resource type="AudioStream" uid="uid://77x0mdfpv7ao" path="res://Música i Efectes de So/So/sfx_laser1.ogg" id="3_ao5ls"]
 [ext_resource type="AudioStream" uid="uid://bw6rctbxmnatk" path="res://Música i Efectes de So/So/sfx_shieldUp.ogg" id="4_m8jqh"]
 
@@ -11,6 +12,7 @@ script = ExtResource("1_02o88")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_lx8pc")
+script = ExtResource("3_4dpdd")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 rotation = -3.11018
