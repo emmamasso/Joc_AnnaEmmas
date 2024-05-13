@@ -37,7 +37,7 @@ bbcode_enabled = true
 text = "[center]
 Aquest joc està inspirat en el clàssic \"space invaders\". 
 [/center]
-El teu planeta ha estat envait per naus enemigues del planeta roig. Tu ets l'ultim pilot de la resistència i has d'aturar l'exèrcit atacant. 
+El teu planeta ha estat envaït per naus enemigues del planeta roig. Tu ets l'ultim pilot de la resistència i has d'aturar l'exèrcit atacant. 
 Mou-te per esquivar les bales (fletxes del teclat) i derrota els enemics fent ús de la teva munició (per disparar prémer la tecla d'espai). Malauradament, les naus enemigues també duen armes i et superen en nombre així que si vols conservar la vida i guanyar el joc hauràs d'usar el teu enginy. Per sort,  hi ha  meteorits que podràs fer servir com a escut mentre durin. 
 
 ATENCIÓ: 
