@@ -23,7 +23,7 @@ func _ready():
 	$TimerPowerUpMunicio.start()
 	$TimerPowerUpVides.wait_time=randf_range(15,25)
 	$TimerPowerUpVides.start()
-	$MeteoritNou.wait_time=randf_range(50,60)
+	$MeteoritNou.wait_time=randf_range(65,80)
 	$MeteoritNou.start()
 	$escut.wait_time=randf_range(50,70)
 	$escut.start()
