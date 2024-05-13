@@ -29,7 +29,7 @@ func dispara():
 		Vides.Balespeons.add_child(nova_bala)
 		nova_bala.global_position = global_position
 		nova_bala.rotation_degrees=rotacio
-		rotacio+=12.9
+		rotacio+=13.2
 		direccio = direccio.rotated(2*PI/n_bales)
 		nova_bala.direccio = direccio
 		if Vides.so==true:
