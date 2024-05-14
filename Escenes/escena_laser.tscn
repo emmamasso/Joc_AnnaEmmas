@@ -1,30 +1,51 @@
-[gd_scene load_steps=8 format=3 uid="uid://dxx4kuyuat8po"]
+[gd_scene load_steps=12 format=3 uid="uid://dxx4kuyuat8po"]
 
 [ext_resource type="Script" path="res://Escenes/Scripts/escena_laser.gd" id="1_4bjj3"]
 [ext_resource type="Texture2D" uid="uid://q1k8tde20n7x" path="res://Imatges/Bales/laserGreen12.png" id="1_fm6cl"]
 [ext_resource type="Texture2D" uid="uid://75wrb3xtpm5a" path="res://Imatges/Bales/laserGreen13.png" id="2_tevip"]
 [ext_resource type="PackedScene" uid="uid://3am2qamtiii1" path="res://Escenes/escena_explosió_lasers.tscn" id="2_uph5d"]
 [ext_resource type="Texture2D" uid="uid://cj2anwl0ygq73" path="res://Imatges/Bales/laserGreen02.png" id="3_rwmsd"]
+[ext_resource type="Texture2D" uid="uid://clwvhts7ksta8" path="res://Imatges/Bales/laserBlue13.png" id="3_uvlru"]
 [ext_resource type="Texture2D" uid="uid://dkm8ur5e82p3y" path="res://Imatges/Bales/laserGreen03.png" id="4_1wihw"]
+[ext_resource type="Texture2D" uid="uid://dqd01wh4q1nk8" path="res://Imatges/Bales/laserBlue12.png" id="4_38sxc"]
+[ext_resource type="Texture2D" uid="uid://c55c1m0eocmm1" path="res://Imatges/Bales/laserBlue16.png" id="5_5rfie"]
+[ext_resource type="Texture2D" uid="uid://bojeb2ylr6j8t" path="res://Imatges/Bales/laserBlue06.png" id="6_aohk8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qb37e"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_fm6cl")
+"texture": ExtResource("3_uvlru")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_tevip")
+"texture": ExtResource("4_38sxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5rfie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_aohk8")
+}],
+"loop": false,
+"name": &"laser_blau",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_1wihw")
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_rwmsd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_1wihw")
+"texture": ExtResource("2_tevip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_fm6cl")
 }],
 "loop": false,
-"name": &"laser_surt",
-"speed": 8.0
+"name": &"laser_verd",
+"speed": 25.0
 }]
 
 [node name="escena_laser" type="Area2D"]
@@ -36,7 +57,7 @@ script = ExtResource("1_4bjj3")
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.506412, 0.737138)
 sprite_frames = SubResource("SpriteFrames_qb37e")
-animation = &"laser_surt"
+animation = &"laser_verd"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-4, 14, 3, 13, 3, -15, -4, -15)

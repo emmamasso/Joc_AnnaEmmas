@@ -1,14 +1,39 @@
-[gd_scene load_steps=8 format=3 uid="uid://3am2qamtiii1"]
+[gd_scene load_steps=13 format=3 uid="uid://3am2qamtiii1"]
 
+[ext_resource type="Texture2D" uid="uid://dba571gemc663" path="res://Imatges/Bales/laserBlue04.png" id="1_bsqf8"]
 [ext_resource type="Texture2D" uid="uid://0218bp28gtn0" path="res://Imatges/Bales/laserGreen08.png" id="1_skpjp"]
 [ext_resource type="Texture2D" uid="uid://ddgt0atycuhqx" path="res://Imatges/Bales/laserGreen15.png" id="2_6wugs"]
+[ext_resource type="Texture2D" uid="uid://cbxighfm8yxdr" path="res://Imatges/Bales/laserBlue09.png" id="2_uma55"]
+[ext_resource type="Texture2D" uid="uid://crdfcackcqg27" path="res://Imatges/Bales/laserBlue10.png" id="3_otuen"]
 [ext_resource type="Texture2D" uid="uid://b250ks0skovu1" path="res://Imatges/Bales/laserGreen16.png" id="3_qkp40"]
 [ext_resource type="Texture2D" uid="uid://cgep4p752ka3y" path="res://Imatges/Bales/laserGreen01.png" id="4_t70oq"]
+[ext_resource type="Texture2D" uid="uid://5s2if3cul6od" path="res://Imatges/Bales/laserBlue11.png" id="4_x0edw"]
+[ext_resource type="Texture2D" uid="uid://dejs21fjhvt6i" path="res://Imatges/Bales/laserBlue08.png" id="5_qf2mq"]
 [ext_resource type="Texture2D" uid="uid://csrmtdoee05rs" path="res://Imatges/Bales/laserGreen14.png" id="5_r510g"]
 [ext_resource type="Script" path="res://Escenes/Scripts/exploció.laser.gd" id="6_3e138"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iq0se"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bsqf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uma55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_otuen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x0edw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qf2mq")
+}],
+"loop": false,
+"name": &"explosioblau",
+"speed": 65.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_skpjp")
@@ -26,7 +51,7 @@ animations = [{
 "texture": ExtResource("5_r510g")
 }],
 "loop": false,
-"name": &"explosio",
+"name": &"explosioverd",
 "speed": 65.0
 }]
 
@@ -34,7 +59,7 @@ animations = [{
 position = Vector2(0, -3)
 scale = Vector2(0.769231, 0.665541)
 sprite_frames = SubResource("SpriteFrames_iq0se")
-animation = &"explosio"
+animation = &"explosioverd"
 script = ExtResource("6_3e138")
 
 [connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

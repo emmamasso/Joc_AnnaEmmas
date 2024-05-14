@@ -4,8 +4,10 @@ extends Area2D
 var velocitat = 800
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	if Vides.coloravio==true:
+		$AnimatedSprite2D2.play("laser_verd")
+	elif Vides.coloravio==false:
+		$AnimatedSprite2D2.play("laser_blau")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
