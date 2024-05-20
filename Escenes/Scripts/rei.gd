@@ -55,7 +55,8 @@ func _on_tempsentrada_timeout():
 
 
 func _on_visible_on_screen_notifier_2d_screen_entered():
-	$musica.set_volume_db(15)
+	var tween=create_tween()
+	tween.tween_property($musica,"volume_db",15,3).set_trans(Tween.TRANS_LINEAR)
 
 
 func _on_musica_finished():
